@@ -1,0 +1,59 @@
+.main {
+    padding: 0 57px 48px 64px;
+    background: url('@img/main/slides/slide1.png') center center/cover no-repeat;
+    &__text {
+        margin-top: 183px;
+        margin-left: 201px;
+        width: 647px;
+    }
+
+    &__title {
+        width: 70%;
+        font-weight: 700;
+        font-size: 56px;
+        color: $main_text_color;
+        line-height: 68px;
+    }
+
+    &__subtitle {
+        margin-top: 25px;
+        font-weight: 700;
+        font-size: 10px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        a {
+            padding: 0 65px 0 16px;
+            position: relative;
+            color: $main_text_color;
+            text-decoration: none;
+            &:hover {
+                color: $main_text_color;
+                &::before, &::after {
+                    background: rgba(255, 255, 255, 1);
+                }
+            }
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                background: rgba(255, 255, 255, 0.4);
+                top: 50%;
+                transform: translateY(-50%);
+                transition: all .5s;
+            }
+            &::before {
+                width: 8px;
+                height: 1px;
+                left: 0;
+            }
+            &::after {
+                width: 56px;
+                height: 1px;
+                right: 0;
+            }
+        }
+    }
+
+    &__link {
+    }
+}

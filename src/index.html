@@ -11,7 +11,48 @@
 </head>
 
 <body>
-    @@include('html/header.html', {})
+    <section class="main">
+        @@include('html/header.html', {})
+        <div class="main__text">
+            <div class="main__title">Thoughtful
+                making of space</div>
+            <div class="main__subtitle">
+                <a href="#" class="main__link">
+                    Discover more
+                </a>
+            </div>
+        </div>
+        <div class="main__info">
+            <div class="main__social-list">
+                <div class="main__social-item">
+                    <a href="#">Fb</a>
+                </div>
+                <div class="main__social-item">
+                    <a href="#">In</a>
+                </div>
+                <div class="main__social-item">
+                    <a href="#">Be</a>
+                </div>
+            </div>
+            <div class="main__select">
+                <img src="@icons/maps-and-flags.svg" alt="maps-and-flags">
+                <span>Berlin</span>
+                <img src="@icons/arrow.svg" alt="arrow">
+            </div>
+            <div class="main__contacts">
+                <div class="main__tel">
+                    <a href="tel:+380983527547">
+                        +380983527547
+                    </a>
+                </div>
+                <div class="main__email">
+                    <a href="mailto:info@gmail.com">
+                        E: info@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="./js/bundle.js"></script>
 </body>
 
