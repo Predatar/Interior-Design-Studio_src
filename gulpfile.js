@@ -29,8 +29,8 @@ gulp.task('server', function () {
 gulp.task('styles', function () {
     return gulp
         .src('src/sass/**/*.+(scss|sass)', { sourcemaps: true })
-        .pipe(replace(/@img\//g, 'img/'))
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(replace(/@img\//g, '../img/'))
         .pipe(gcmq())
         .pipe(
             webpcss({
@@ -65,6 +65,7 @@ gulp.task('html', function () {
         .src('src/*.html')
         .pipe(fileinclude())
         .pipe(replace(/@img\//g, 'img/'))
+        .pipe(replace(/@icons\//g, 'icons/'))
         .pipe(webphtml())
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('dist/'))

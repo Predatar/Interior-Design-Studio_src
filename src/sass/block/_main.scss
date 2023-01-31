@@ -1,0 +1,138 @@
+.main {
+    padding: 0 57px 48px 64px;
+    background: url('@img/main/slides/slide1.png') center center/cover no-repeat;
+    &__text {
+        margin-top: 183px;
+        margin-left: 201px;
+        width: 647px;
+    }
+
+    &__title {
+        width: 70%;
+        font-weight: 700;
+        font-size: 56px;
+        color: $main_text_color;
+        line-height: 68px;
+    }
+
+    &__subtitle {
+        margin-top: 25px;
+        font-weight: 700;
+        font-size: 10px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        padding: 0 65px 0 16px;
+        position: relative;
+        color: $main_text_color;
+        text-decoration: none;
+        &:hover {
+            color: $main_text_color;
+            &::before,
+            &::after {
+                background: rgba(255, 255, 255, 1);
+            }
+        }
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            background: rgba(255, 255, 255, 0.4);
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.5s;
+        }
+        &::before {
+            width: 8px;
+            height: 1px;
+            left: 0;
+        }
+        &::after {
+            width: 56px;
+            height: 1px;
+            right: 0;
+        }
+    }
+
+    &__info {
+        margin-top: 214px;
+        width: 624px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__social {
+        &-list {
+            width: 78px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-item {
+            a {
+                color: $main_text_color;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 11px;
+                &:hover {
+                    color: $main_text_color;
+                }
+            }
+        }
+    }
+
+    &__select {
+        position: relative;
+        width: 117px;
+        padding-left: 12px;
+        display: flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 9px;
+
+        img {
+            transition: all .5s;
+        }
+        span {
+            margin-left: 6px;
+            margin-right: 31px;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 0.06em;
+            color: $main_text_color;
+        }
+    }
+
+    &__contacts {
+        width: 246px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__tel {
+        a {
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 0.06em;
+            color: $main_text_color;
+            text-decoration: none;
+            &:hover {
+                color: $main_text_color;
+            }
+        }
+    }
+
+    &__email {
+        a {
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 0.06em;
+            color: $main_text_color;
+            text-decoration: none;
+            &:hover {
+                color: $main_text_color;
+            }
+        }
+    }
+}
