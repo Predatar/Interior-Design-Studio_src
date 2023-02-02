@@ -1,7 +1,6 @@
 .footer {
     padding: 119px 64px 25px;
-    background: rgba(0, 0, 0, 1) center center/cover no-repeat;
-    /* background: url('@img/main/footer_bg.png') center center/cover no-repeat; */
+    background: url('@img/main/footer_bg.png') center center/cover no-repeat;
 
     &__title {
         margin-left: 132px;
@@ -92,6 +91,7 @@
     &__btn {
         margin-top: 72px;
         margin-left: 132px;
+        border: none;
         padding: 17px 48px;
         background: #fff;
         font-weight: 600;
