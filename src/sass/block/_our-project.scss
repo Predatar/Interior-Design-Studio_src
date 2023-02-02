@@ -33,17 +33,22 @@
             position: relative;
             &:not(:nth-child(3)) {
                 width: calc(100% / 2.02);
+                /* max-width: 653px;
+                min-width: 453px; */
             }
             img {
                 width: 100%;
             }
             &:last-child {
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 background: #fff;
                 position: relative;
+                text-decoration: none;
                 img {
+                    margin-top: 24px;
                 }
             }
         }
@@ -71,7 +76,7 @@
             font-size: 20px;
             line-height: 126%;
             color: $main_text_color;
-            &:nth-of-type(3) {
+            &__tight {
                 width: 273px;
                 bottom: 32px;
             }
@@ -80,7 +85,7 @@
             position: absolute;
             bottom: 34px;
             left: 32px;
-            
+
             a {
                 @include discover;
                 color: $main_text_color;
@@ -106,6 +111,17 @@
                     }
                 }
             }
+
+            &__right {
+                left: auto;
+                right: 85px;
+            }
+        }
+        &-text {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 28px;
+            color: $second_text_color;
         }
     }
 }
