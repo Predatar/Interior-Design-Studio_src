@@ -8,7 +8,7 @@
     }
 
     &__title {
-        width: 70%;
+        width: 80%;
         font-weight: 700;
         font-size: 56px;
         color: $main_text_color;
@@ -17,17 +17,11 @@
 
     &__subtitle {
         margin-top: 25px;
-        font-weight: 700;
-        font-size: 10px;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
     }
 
     &__link {
-        padding: 0 65px 0 16px;
-        position: relative;
+        @include discover;
         color: $main_text_color;
-        text-decoration: none;
         &:hover {
             color: $main_text_color;
             &::before,
@@ -37,22 +31,7 @@
         }
         &::before,
         &::after {
-            content: '';
-            position: absolute;
             background: rgba(255, 255, 255, 0.4);
-            top: 50%;
-            transform: translateY(-50%);
-            transition: all 0.5s;
-        }
-        &::before {
-            width: 8px;
-            height: 1px;
-            left: 0;
-        }
-        &::after {
-            width: 56px;
-            height: 1px;
-            right: 0;
         }
     }
 
@@ -92,7 +71,7 @@
         border-radius: 9px;
 
         img {
-            transition: all .5s;
+            transition: all 0.5s;
         }
         span {
             margin-left: 6px;
@@ -102,6 +81,26 @@
             letter-spacing: 0.06em;
             color: $main_text_color;
         }
+    }
+
+    &__option {
+        margin-top: 5px;
+        width: 117px;
+        position: absolute;
+        display: none;
+        top: 100%;
+        left: 0;
+    }
+
+    &__option-item {
+        margin: 2px 0;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 9px;
+        padding-left: 28px;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: 0.06em;
+        color: $main_text_color;
     }
 
     &__contacts {

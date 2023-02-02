@@ -1,0 +1,88 @@
+.company-phil {
+    padding: 140px 0 140px 197px;
+    display: flex;
+    flex-direction: column;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        margin-top: 80px;
+        width: 515px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        color: $second_text_color;
+    }
+
+    &__subtitle {
+        margin-top: 28px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        color: $second_text_color;
+        opacity: 0.7;
+    }
+
+    &__link {
+        margin-top: 64px;
+        a {
+            @include discover;
+            color: $second_text_color;
+            &:hover {
+                color: $second_text_color;
+                &::before,
+                &::after {
+                    background: rgba(49, 49, 49, 1);
+                }
+            }
+            &::before,
+            &::after {
+                background: rgba(49, 49, 49, 0.2);
+            }
+        }
+    }
+
+    &__info-img {
+    }
+
+    &__quote {
+        margin-top: 78px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 215px;
+        position: relative;
+        &-img {
+        }
+        &-subimg {
+            position: absolute;
+            top: -125px;
+            left: 263px;
+        }
+    }
+
+    &__text {
+        margin-top: 152px;
+        width: 380px;
+        position: relative;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 34px;
+        color: $second_text_color;
+        opacity: 0.7;
+        &::before {
+            content: '“';
+            position: absolute;
+            top: 0;
+            left: -50px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+        }
+    }
+}

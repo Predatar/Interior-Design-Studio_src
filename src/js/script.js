@@ -1,3 +1,3 @@
-import * as flsFunc from './modules/function';
+import testWebP from "./modules/function";
 
-flsFunc.isWebp();
+testWebP();

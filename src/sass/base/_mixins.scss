@@ -1,0 +1,28 @@
+@mixin discover {
+    position: relative;
+    text-decoration: none;
+    padding: 0 65px 0 16px;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.5s;
+    }
+    &::before {
+        width: 8px;
+        height: 1px;
+        left: 0;
+    }
+    &::after {
+        width: 56px;
+        height: 1px;
+        right: 0;
+    }
+}

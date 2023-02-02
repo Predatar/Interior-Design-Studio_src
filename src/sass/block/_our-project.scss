@@ -1,0 +1,127 @@
+.our-project {
+    padding: 140px 50px 0;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        color: $main_text_color;
+    }
+
+    &__subtitle {
+        margin: 0 auto;
+        margin-top: 34px;
+        width: 449px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: $third_text_color;
+    }
+
+    &__projects {
+        margin-top: 140px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        &-item {
+            position: relative;
+            &:not(:nth-child(3)) {
+                width: calc(100% / 2.02);
+                /* max-width: 653px;
+                min-width: 453px; */
+            }
+            img {
+                width: 100%;
+            }
+            &:last-child {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: #fff;
+                position: relative;
+                text-decoration: none;
+                img {
+                    margin-top: 24px;
+                }
+            }
+        }
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            width: 181px;
+            position: absolute;
+            top: 32px;
+            left: 32px;
+        }
+        &-name,
+        &-date,
+        &-area {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 170%;
+            color: $main_text_color;
+        }
+        &-title {
+            position: absolute;
+            bottom: 71px;
+            left: 32px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 126%;
+            color: $main_text_color;
+            &__tight {
+                width: 273px;
+                bottom: 32px;
+            }
+        }
+        &-link {
+            position: absolute;
+            bottom: 34px;
+            left: 32px;
+
+            a {
+                @include discover;
+                color: $main_text_color;
+                padding: 0 71px 0 17px;
+                &::before,
+                &::after {
+                    background: rgba(255, 255, 255, 0.4);
+                }
+                &::before {
+                    width: 9px;
+                    height: 1px;
+                }
+                &::after {
+                    width: 63px;
+                    height: 1px;
+                }
+            }
+            &:hover {
+                a {
+                    &::before,
+                    &::after {
+                        background: rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+
+            &__right {
+                left: auto;
+                right: 85px;
+            }
+        }
+        &-text {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 28px;
+            color: $second_text_color;
+        }
+    }
+}
