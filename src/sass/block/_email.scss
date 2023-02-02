@@ -1,0 +1,74 @@
+.email {
+    width: 100%;
+    height: 814px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__img {
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+        &:nth-child(1) {
+            right: 319px;
+            top: -144px;
+        }
+        &:nth-child(2) {
+            top: 62px;
+            right: 111px;
+            z-index: -2;
+        }
+        &:nth-child(3) {
+            top: 62px;
+            left: 144px;
+            z-index: -2;
+        }
+        &:nth-child(4) {
+            left: -141px;
+            top: 184px;
+        }
+        &:nth-child(5) {
+            bottom: 61px;
+            left: 278px;
+        }
+        &:nth-child(6) {
+            right: 87px;
+            bottom: 104px;
+        }
+        &:nth-child(7) {
+            left: -127px;
+            bottom: -90px;
+        }
+        &:nth-child(8) {
+            right: 453px;
+            bottom: -47px;
+        }
+    }
+
+    &__title {
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 68px;
+        color: $second_text_color;
+        text-decoration: none;
+        &:hover {
+            color: $second_text_color;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 18px;
+        width: 390px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: $second_text_color;
+        opacity: 0.6;
+    }
+}

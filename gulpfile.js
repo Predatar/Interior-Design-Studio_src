@@ -10,9 +10,6 @@ const webpack = require('webpack-stream');
 const fileinclude = require('gulp-file-include');
 const replace = require('gulp-replace');
 const gcmq = require('gulp-group-css-media-queries');
-const webphtml = require('gulp-webp-html-nosvg');
-const webpcss = require('gulp-webpcss');
-const webp = require('gulp-webp');
 const newer = require('gulp-newer');
 
 gulp.task('server', function () {
@@ -32,12 +29,6 @@ gulp.task('styles', function () {
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(replace(/@img\//g, '../img/'))
         .pipe(gcmq())
-        .pipe(
-            webpcss({
-                webClass: '.webp',
-                noWebpClass: '.no-webp'
-            })
-        )
         .pipe(rename({ suffix: '.min', prefix: '' }))
         .pipe(
             autoprefixer({
@@ -66,7 +57,6 @@ gulp.task('html', function () {
         .pipe(fileinclude())
         .pipe(replace(/@img\//g, 'img/'))
         .pipe(replace(/@icons\//g, 'icons/'))
-        .pipe(webphtml())
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('dist/'))
         .pipe(browserSync.stream());
@@ -81,7 +71,8 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('icons', function () {
-    return gulp.src('src/icons/**/*')
+    return gulp
+        .src('src/icons/**/*')
         .pipe(newer('dist/icons'))
         .pipe(imagemin())
         .pipe(gulp.dest('dist/icons'));
@@ -91,15 +82,7 @@ gulp.task('images', function () {
     return gulp
         .src('src/img/**/*')
         .pipe(newer('dist/img'))
-        .pipe(webp())
-        .pipe(gulp.dest('dist/img'))
-        .pipe(gulp.src('src/img/**/*'))
-        .pipe(newer('dist/img'))
-        .pipe(
-            imagemin({
-                optimizationLevel: 3
-            })
-        )
+        .pipe(imagemin())
         .pipe(gulp.dest('dist/img'));
 });
 

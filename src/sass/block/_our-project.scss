@@ -31,15 +31,8 @@
         gap: 8px;
         &-item {
             position: relative;
-            &:not(:nth-child(3)) {
-                width: calc(100% / 2.02);
-                /* max-width: 653px;
-                min-width: 453px; */
-            }
-            img {
-                width: 100%;
-            }
             &:last-child {
+                width: 653px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -49,11 +42,23 @@
                 text-decoration: none;
                 img {
                     margin-top: 24px;
+                    width: auto;
                 }
+            }
+            &:hover {
+                .our-project__projects-info {
+                    display: flex;
+                }
+                .our-project__projects-title {
+                    display: block;
+                }
+            }
+            img {
+                width: 100%;
             }
         }
         &-info {
-            display: flex;
+            display: none;
             justify-content: space-between;
             width: 181px;
             position: absolute;
@@ -69,8 +74,9 @@
             color: $main_text_color;
         }
         &-title {
+            display: none;
             position: absolute;
-            bottom: 71px;
+            bottom: 33px;
             left: 32px;
             font-weight: 700;
             font-size: 20px;
@@ -82,6 +88,7 @@
             }
         }
         &-link {
+            display: none;
             position: absolute;
             bottom: 34px;
             left: 32px;

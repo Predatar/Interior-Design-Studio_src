@@ -103,7 +103,7 @@
             eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
         </div>
         <div class="our-project__projects">
-            <div class="our-project__projects-item">
+            <a href="#" class="our-project__projects-item">
                 <div class="our-project__projects-info">
                     <div class="our-project__projects-name">Lodz</div>
                     <div class="our-project__projects-date">16.10.2018</div>
@@ -114,8 +114,8 @@
                 <div class="our-project__projects-link">
                     <a href="#">Discover more</a>
                 </div>
-            </div>
-            <div class="our-project__projects-item">
+            </a>
+            <a href="#" class="our-project__projects-item">
                 <div class="our-project__projects-info">
                     <div class="our-project__projects-name">Lodz</div>
                     <div class="our-project__projects-date">16.10.2018</div>
@@ -126,20 +126,21 @@
                 <div class="our-project__projects-link">
                     <a href="#">Discover more</a>
                 </div>
-            </div>
-            <div class="our-project__projects-item">
+            </a>
+            <a href="#" class="our-project__projects-item">
                 <div class="our-project__projects-info">
                     <div class="our-project__projects-name">Lodz</div>
                     <div class="our-project__projects-date">16.10.2018</div>
                     <div class="our-project__projects-area">80 sq.m</div>
                 </div>
                 <img src="@img/project/interior3.png" alt="interior">
-                <div class="our-project__projects-title our-project__projects-title__tight">Residence by the lighthouse</div>
+                <div class="our-project__projects-title our-project__projects-title__tight">Residence by the lighthouse
+                </div>
                 <div class="our-project__projects-link our-project__projects-link__right">
                     <a href="#">Discover more</a>
                 </div>
-            </div>
-            <div class="our-project__projects-item">
+            </a>
+            <a href="#" class="our-project__projects-item">
                 <div class="our-project__projects-info">
                     <div class="our-project__projects-name">Lodz</div>
                     <div class="our-project__projects-date">16.10.2018</div>
@@ -150,17 +151,69 @@
                 <div class="our-project__projects-link">
                     <a href="#">Discover more</a>
                 </div>
-            </div>
+            </a>
             <a href="#" class="our-project__projects-item">
                 <div class="our-project__projects-text">
                     See more 60 projects
                 </div>
                 <img src="@img/project/interior5.png" alt="interior">
-                
+
             </a>
         </div>
         @@include('html/trail.html', {})
     </section>
+    @@include('html/email.html', {})
+    <footer class="footer">
+        <div class="footer__title">Drop us a line</div>
+        <div class="footer__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu
+            mauris vitae posuere. </div>
+        <div class="footer__contacts">
+            <div class="footer__cities">
+                <div class="footer__city">
+                    <div class="footer__city-title">Kyiv</div>
+                    <div class="footer__city-subtitle">(209) 555-0104 <br>
+                        6391 Elgin St. Celina,
+                        Delaware 10299</div>
+                </div>
+                <div class="footer__city">
+                    <div class="footer__city-title">Lviv</div>
+                    <div class="footer__city-subtitle">(209) 555-0104 <br>
+                        6391 Elgin St. Celina,
+                        Delaware 10299</div>
+                </div>
+                <div class="footer__city">
+                    <div class="footer__city-title">Kharkiv</div>
+                    <div class="footer__city-subtitle">(209) 555-0104 <br>
+                        6391 Elgin St. Celina,
+                        Delaware 10299</div>
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="footer__email">
+                    <a href="mailto:info@gmail.com">info@gmail.com</a>
+                </div>
+                <div class="footer__social">
+                    <div class="footer__social-item">
+                        <a href="#">Fb</a>
+                    </div>
+                    <div class="footer__social-item">
+                        <a href="#">In</a>
+                    </div>
+                    <div class="footer__social-item">
+                        <a href="#">Be</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="footer__btn">Make request</button>
+        <div class="footer__license">
+            <div class="footer__copyright">© Copyright 2018. All rights reserved</div>
+            <div class="footer__made">
+                Made with love in
+                <img src="@icons/theFirsttheLast.svg" alt="theFirsttheLast">
+            </div>
+        </div>
+    </footer>
     <script src="./js/bundle.js"></script>
 </body>
 

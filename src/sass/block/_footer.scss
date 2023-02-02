@@ -1,0 +1,126 @@
+.footer {
+    padding: 119px 64px 25px;
+    background: url('@img/main/footer_bg.png') center center/cover no-repeat;
+
+    &__title {
+        margin-left: 132px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        color: $main_text_color;
+    }
+
+    &__subtitle {
+        margin-top: 24px;
+        margin-left: 132px;
+        width: 390px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        color: $main_text_color;
+        opacity: 0.6;
+    }
+
+    &__contacts {
+        margin: 72px 130px 0 132px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__cities {
+        width: 653px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__city {
+        &-title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: $main_text_color;
+        }
+        &-subtitle {
+            margin-top: 24px;
+            width: 133px;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            letter-spacing: 0.06em;
+            color: $main_text_color;
+            opacity: 0.6;
+        }
+    }
+
+    &__info {
+    }
+
+    &__email {
+        a {
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 13px;
+            letter-spacing: 0.06em;
+            color: $main_text_color;
+            text-decoration: none;
+            &:hover {
+                color: $main_text_color;
+            }
+        }
+    }
+
+    &__social {
+        width: 78px;
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            a {
+                font-weight: 600;
+                font-size: 11px;
+                line-height: 13px;
+                letter-spacing: 0.06em;
+                color: $main_text_color;
+                text-decoration: none;
+                &:hover {
+                    color: $main_text_color;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 72px;
+        margin-left: 132px;
+        border: none;
+        padding: 17px 48px;
+        background: #fff;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 0.06em;
+        color: $second_text_color;
+    }
+
+    &__license {
+        margin-top: 119px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__copyright {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        color: $third_text_color;
+    }
+
+    &__made {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        color: $third_text_color;
+        img {
+            margin-left: 24px;
+        }
+    }
+}
