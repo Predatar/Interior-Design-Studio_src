@@ -31,12 +31,8 @@
         gap: 8px;
         &-item {
             position: relative;
-            &:not(:nth-child(3)) {
-                width: calc(100% / 2.02);
-                /* max-width: 653px;
-                min-width: 453px; */
-            }
             &:last-child {
+                width: 653px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
