@@ -1,6 +1,18 @@
 .footer {
     padding: 119px 64px 25px;
     background: url('@img/main/footer_bg.png') center center/cover no-repeat;
+    position: relative;
+
+    &__anchor {
+        @include anchor;
+        color: $main_text_color;
+        opacity: 0.1;
+        left: 38px;
+        top: 150px;
+        &::before {
+            background: $main_text_color;
+        }
+    }
 
     &__title {
         margin-left: 132px;
