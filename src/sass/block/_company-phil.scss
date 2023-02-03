@@ -2,6 +2,7 @@
     padding: 140px 0 140px 197px;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     &__wrapper {
         display: flex;
@@ -11,13 +12,12 @@
     &__info {
         margin-top: 80px;
         width: 515px;
-        position: relative;
         &-img {
         }
         &-anchor {
             @include anchor;
-            top: 20px;
-            left: -124px;
+            top: 240px;
+            left: 40px;
             color: $third_text_color;
             opacity: 0.32;
             &::before {
