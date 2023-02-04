@@ -4,8 +4,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    &__wrapper {
+        width: 540px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     &__logo {
-        margin-right: 141px;
         width: 60px;
         height: 13px;
         a {
@@ -66,7 +73,6 @@
     }
 
     &__action {
-        margin-left: 480px;
         width: 270px;
         display: flex;
         justify-content: space-between;
@@ -94,5 +100,56 @@
         letter-spacing: 0.06em;
         color: $main_text_color;
         cursor: pointer;
+    }
+
+    .sidemenu {
+        width: 87px;
+        display: none;
+        align-items: center;
+        .burger {
+            height: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            span {
+                width: 28px;
+                height: 1px;
+                background-color: #fff;
+            }
+        }
+        &__title {
+            margin-left: 23px;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 13px;
+            letter-spacing: 0.06em;
+            color: $main_text_color;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        &__wrapper {
+            justify-content: flex-start;
+        }
+        &__logo {
+            margin-right: 97px;
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__action {
+            width: 231px;
+        }
+
+        &__btn {
+            padding: 15px 35px;
+        }
+        .sidemenu {
+            display: flex;
+        }
     }
 }
