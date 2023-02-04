@@ -62,6 +62,10 @@
             right: 0;
             top: 0;
         }
+
+        &__active {
+            z-index: 10;
+        }
     }
 
     &__subtitle {
