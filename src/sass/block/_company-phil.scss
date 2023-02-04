@@ -2,6 +2,7 @@
     padding: 140px 0 140px 197px;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     &__wrapper {
         display: flex;
@@ -11,6 +12,18 @@
     &__info {
         margin-top: 80px;
         width: 515px;
+        &-img {
+        }
+        &-anchor {
+            @include anchor;
+            top: 240px;
+            left: 40px;
+            color: $third_text_color;
+            opacity: 0.32;
+            &::before {
+                background: $third_text_color;
+            }
+        }
     }
 
     &__title {
@@ -48,9 +61,6 @@
         }
     }
 
-    &__info-img {
-    }
-
     &__quote {
         margin-top: 78px;
         display: flex;
@@ -63,6 +73,17 @@
             position: absolute;
             top: -125px;
             left: 263px;
+        }
+        &-anchor {
+            @include anchor;
+            top: 40px;
+            right: -140px;
+            color: $third_text_color;
+            opacity: 0.32;
+
+            &::before {
+                background: $third_text_color;
+            }
         }
     }
 

@@ -4,12 +4,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
     &__title {
         font-weight: 700;
         font-size: 36px;
         line-height: 44px;
         color: $main_text_color;
+    }
+
+    &__anchor {
+        @include anchor;
+        top: 172px;
+        left: 30px;
+        color: $main_text_color;
+        opacity: 0.13;
+        &::before {
+            background: $main_text_color;
+        }
+    }
+
+    &__anchor-trail {
+        @include anchor;
+        bottom: 514px;
+        left: 15px;
+        color: $main_text_color;
+        opacity: 0.13;
+        &::before {
+            background: $main_text_color;
+        }
     }
 
     &__subtitle {
@@ -29,6 +52,17 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
+        position: relative;
+        &-about {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 68px;
+            position: absolute;
+            top: -44px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 1) 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
         &-item {
             position: relative;
             &:last-child {
