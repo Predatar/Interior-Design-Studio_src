@@ -1,5 +1,5 @@
 .news {
-    padding: 124px 55px 0;
+    padding: 124px 55px 140px;
 
     &__wrapper {
         display: flex;
@@ -11,6 +11,7 @@
     &__item {
         display: flex;
         position: relative;
+        text-decoration: none;
     }
 
     &__info {

@@ -1,0 +1,22 @@
+.license {
+    margin-top: 119px;
+    display: flex;
+    justify-content: space-between;
+    
+    &__copyright {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        color: $third_text_color;
+    }
+
+    &__made {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        color: $third_text_color;
+        img {
+            margin-left: 24px;
+        }
+    }
+}
