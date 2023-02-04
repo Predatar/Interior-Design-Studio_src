@@ -39,12 +39,15 @@
                 </div>
             </div>
             <div class="main__select">
-                <img src="@icons/maps-and-flags.svg" alt="maps-and-flags">
-                <span>Berlin</span>
+                <div style="display: flex;
+                align-items: center;">
+                    <img src="@icons/maps-and-flags.svg" alt="maps-and-flags">
+                    <span>Berlin</span>
+                </div>
                 <img src="@icons/arrow.svg" alt="arrow">
                 <div class="main__option">
-                    <div class="main__option-item">Berlin</div>
-                    <div class="main__option-item">Hamburg</div>
+                    <div class="main__option-item main__option-item__active" data-location="Berlin">Berlin</div>
+                    <div class="main__option-item" data-location="Hamburg">Hamburg</div>
                 </div>
             </div>
             <div class="main__contacts">
@@ -222,13 +225,7 @@
             </div>
         </div>
         <button class="footer__btn">Make request</button>
-        <div class="footer__license">
-            <div class="footer__copyright">© Copyright 2018. All rights reserved</div>
-            <div class="footer__made">
-                Made with love in
-                <img src="@icons/theFirsttheLast.svg" alt="theFirsttheLast">
-            </div>
-        </div>
+        @@include('html/license.html', {})
     </footer>
     <script src="./js/bundle.js"></script>
 </body>

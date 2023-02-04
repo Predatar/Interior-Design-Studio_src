@@ -3,9 +3,10 @@
 @import 'base/mixins';
 
 @import 'block/header';
-@import 'block/main';
-@import 'block/company-phil';
-@import 'block/our-project';
+@import 'block/main/_main';
+@import 'block/main/company-phil';
+@import 'block/main/our-project';
 @import 'block/trail';
 @import 'block/email';
-@import 'block/footer';
+@import 'block/main/footer';
+@import 'block/_license';
