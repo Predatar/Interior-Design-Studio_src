@@ -29,6 +29,21 @@ window.addEventListener('DOMContentLoaded', () => {
       elem.classList.remove('trail__group-item__active');
     });
   });
+
+  // * out project
+
+  /* const ourProjectItem = document.querySelectorAll('.our-project__projects-item');
+  window.addEventListener('resize', () => {
+      console.log(window.innerWidth);
+      if (window.innerWidth <= 1035) {
+          ourProjectItem.forEach(elem => {
+              elem.addEventListener('click', e => {
+                  console.log(e.target);
+                  elem.preventDefault();
+              });
+          });
+      }
+  }); */
 });
 /******/ })()
 ;
