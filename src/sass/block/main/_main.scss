@@ -184,3 +184,48 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .main {
+        padding-bottom: 32px;
+        &__text {
+            margin-top: 287px;
+            margin-left: 124px;
+            width: 271px;
+        }
+
+        &__title {
+            width: 100%;
+            font-size: 44px;
+            line-height: 54px;
+        }
+
+        &__info {
+            width: 515px;
+        }
+
+        &__social-list {
+        }
+
+        &__social-item {
+        }
+
+        &__select {
+        }
+
+        &__option {
+        }
+
+        &__option-item {
+        }
+
+        &__contacts {
+        }
+
+        &__tel {
+        }
+
+        &__email {
+        }
+    }
+}

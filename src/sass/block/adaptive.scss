@@ -1,6 +1,6 @@
-@media (max-width: 1024px) {
-    .footer {
-        &__anchor {
+@media (max-width: 768px) {
+    .main {
+        &__text {
         }
 
         &__title {
@@ -9,34 +9,34 @@
         &__subtitle {
         }
 
-        &__contacts {
-        }
-
-        &__cities {
-        }
-
-        &__city {
-        }
-
-        &__city-title {
-        }
-
-        &__city-subtitle {
+        &__link {
         }
 
         &__info {
         }
 
-        &__email {
-        }
-
-        &__social {
+        &__social-list {
         }
 
         &__social-item {
         }
 
-        &__btn {
+        &__select {
+        }
+
+        &__option {
+        }
+
+        &__option-item {
+        }
+
+        &__contacts {
+        }
+
+        &__tel {
+        }
+
+        &__email {
         }
     }
 }
