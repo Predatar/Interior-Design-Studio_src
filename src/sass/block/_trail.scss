@@ -94,3 +94,38 @@
         z-index: 2;
     }
 }
+
+@media (max-width: 1248px) {
+    .trail {
+        width: 455px;
+        margin: 142px 0;
+        flex-direction: column;
+        &__title {
+            width: 455px;
+            text-align: center;
+            font-size: 32px;
+            line-height: 46px;
+        }
+
+        &__group {
+            display: none;
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__subtitle {
+            margin-top: 24px;
+            width: 100%;
+            text-align: center;
+
+        }
+
+        &__btn {
+            margin-top: 64px;
+        }
+    }
+}
