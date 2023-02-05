@@ -82,6 +82,7 @@
     }
 
     &__social {
+        margin-top: 23px;
         width: 78px;
         display: flex;
         justify-content: space-between;
@@ -111,5 +112,43 @@
         line-height: 13px;
         letter-spacing: 0.06em;
         color: $second_text_color;
+    }
+}
+@media (max-width: 1248px) {
+    .footer {
+        padding: 104px 56px 32px;
+        &__anchor {
+            top: 130px;
+            left: 32px;
+        }
+
+        &__title {
+            margin-left: 101px;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__subtitle {
+            margin-left: 101px;
+        }
+
+        &__contacts {
+            margin: 64px 101px 0 101px;
+        }
+
+        &__cities {
+            width: 529px;
+        }
+
+        &__social {
+            margin-top: 21px;
+            &-item {
+            }
+        }
+
+        &__btn {
+            margin-top: 64px;
+            margin-left: 101px;
+        }
     }
 }
