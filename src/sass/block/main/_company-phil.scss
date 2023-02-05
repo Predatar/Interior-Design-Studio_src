@@ -13,6 +13,11 @@
         margin-top: 80px;
         width: 515px;
         &-img {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         &-anchor {
             @include anchor;
@@ -68,11 +73,21 @@
         padding-right: 215px;
         position: relative;
         &-img {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         &-subimg {
             position: absolute;
             top: -125px;
             left: 263px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         &-anchor {
             @include anchor;
@@ -104,6 +119,67 @@
             font-weight: 700;
             font-size: 36px;
             line-height: 44px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .company-phil {
+        padding: 124px 0 124px 159px;
+
+        &__wrapper {
+        }
+
+        &__info {
+            margin-top: 56px;
+            width: 448px;
+            &-img {
+                width: 349px;
+                height: 439px;
+            }
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__link {
+            margin-top: 40px;
+        }
+
+        &__info-anchor {
+            top: 200px;
+        }
+
+        &__quote {
+            margin-top: 161px;
+            padding-right: 140px;
+            &-img {
+                width: 190px;
+                height: 237px;
+            }
+            &-subimg {
+                width: 190px;
+                height: 117px;
+                top: -94px;
+                left: 154px;
+            }
+        }
+
+        &__text {
+            margin-top: 59px;
+            font-size: 16px;
+            line-height: 27px;
+            width: 315px;
+            &::before {
+                left: -30px;
+                font-size: 26px;
+                line-height: 31px;
+            }
+        }
+
+        &__quote-anchor {
+            display: none;
         }
     }
 }
