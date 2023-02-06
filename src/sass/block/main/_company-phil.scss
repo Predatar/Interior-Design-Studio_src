@@ -238,3 +238,130 @@
         }
     }
 }
+@media (max-width: 675px) {
+    .company-phil {
+        padding: 104px 88px;
+
+        &__info-anchor {
+            top: 122px;
+        }
+
+        &__quote {
+            margin-top: 161px;
+            padding-right: 0;
+            &-img {
+                width: 153px;
+                height: 191px;
+            }
+            &-subimg {
+                width: auto;
+                height: 205px;
+                top: -140px;
+                left: 137px;
+            }
+        }
+
+        &__text {
+            margin-top: 213px;
+            width: 290px;
+            &::before {
+                left: -30px;
+                font-size: 26px;
+                line-height: 31px;
+            }
+        }
+    }
+}
+@media (max-width: 624px) {
+    .company-phil {
+        padding: 80px 23px 64px;
+
+        &__title {
+            width: 100%;
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        &__subtitle {
+            width: 100%;
+        }
+
+        &__info-anchor {
+            display: none;
+        }
+
+        &__quote {
+            margin-top: 198px;
+            padding-right: 0;
+            flex-direction: column;
+            &-img {
+                width: 131px;
+                height: 163px;
+            }
+            &-subimg {
+                width: auto;
+                height: 162px;
+                top: -118px;
+                left: 63px;
+            }
+        }
+
+        &__text {
+            margin-top: 80px;
+            margin-left: auto;
+            width: 340px;
+            &::before {
+                left: -39px;
+                font-size: 26px;
+                line-height: 31px;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .company-phil {
+        padding: 80px 23px 64px;
+
+        &__title {
+            width: 100%;
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        &__subtitle {
+            width: 100%;
+        }
+
+        &__info-anchor {
+            display: none;
+        }
+
+        &__quote {
+            margin-top: 198px;
+            padding-right: 0;
+            flex-direction: column;
+            &-img {
+                width: 131px;
+                height: 163px;
+            }
+            &-subimg {
+                width: auto;
+                height: 162px;
+                top: -118px;
+                left: 63px;
+            }
+        }
+
+        &__text {
+            margin-top: 80px;
+            margin-left: 42px;
+            width: auto;
+            &::before {
+                left: -39px;
+                font-size: 26px;
+                line-height: 31px;
+            }
+        }
+    }
+}

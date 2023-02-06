@@ -57,7 +57,7 @@
             width: 133px;
             font-weight: 300;
             font-size: 11px;
-            line-height: 13px;
+            line-height: 18px;
             letter-spacing: 0.06em;
             color: $main_text_color;
             opacity: 0.6;
@@ -191,6 +191,114 @@
             position: absolute;
             bottom: 166px;
             left: 124px;
+        }
+    }
+}
+
+@media (max-width: 625px) {
+    .footer {
+        padding: 56px 24px 24px;
+        &__anchor {
+            display: none;
+        }
+
+        &__title {
+            margin-left: 0;
+            font-size: 26px;
+        }
+
+        &__subtitle {
+            margin-left: 0;
+            width: auto;
+        }
+
+        &__contacts {
+            margin: 0;
+            margin-top: 48px;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: start;
+        }
+
+        &__cities {
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: start;
+        }
+
+        &__city {
+            &-subtitle {
+                margin-top: 18px;
+            }
+        }
+
+        &__social {
+            margin-top: 13px;
+            &-item {
+            }
+        }
+
+        &__btn {
+            margin-top: 48px;
+            margin-left: 0;
+            bottom: 0;
+            left: 0;
+            position: relative;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .footer {
+        padding: 56px 24px 24px;
+        &__anchor {
+            display: none;
+        }
+
+        &__title {
+            margin-left: 0;
+            font-size: 26px;
+        }
+
+        &__subtitle {
+            margin-left: 0;
+            margin-right: 25px;
+            width: auto;
+        }
+
+        &__contacts {
+            margin: 0;
+            margin-top: 48px;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: start;
+        }
+
+        &__cities {
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        &__city {
+            &-subtitle {
+                margin-top: 18px;
+            }
+        }
+
+        &__social {
+            margin-top: 13px;
+            &-item {
+            }
+        }
+
+        &__btn {
+            margin-top: 48px;
+            margin-left: 0;
+            bottom: 0;
+            left: 0;
+            position: relative;
         }
     }
 }

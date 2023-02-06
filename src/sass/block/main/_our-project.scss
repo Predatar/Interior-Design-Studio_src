@@ -173,7 +173,7 @@
     }
 }
 
-@media (max-width: 1314px) {
+@media (max-width: 1330px) {
     .our-project {
         padding: 124px 0 0;
 
@@ -183,6 +183,7 @@
         }
 
         &__anchor {
+            top: 150px;
         }
 
         &__anchor-trail {
@@ -231,7 +232,7 @@
             }
             &-text {
             }
-        } 
+        }
     }
 }
 @media (max-width: 914px) {
@@ -244,6 +245,7 @@
         }
 
         &__anchor {
+            top: 130px;
         }
 
         &__anchor-trail {
@@ -286,6 +288,233 @@
                     right: auto;
                 }
             }
-        } 
+        }
+    }
+}
+@media (max-width: 768px) {
+    .our-project {
+        &__anchor-trail {
+            bottom: 394px;
+        }
+    }
+}
+@media (max-width: 695px) {
+    .our-project {
+        padding: 104px 0 0;
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__anchor {
+            top: 130px;
+        }
+
+        &__anchor-trail {
+            bottom: 428px;
+        }
+
+        &__subtitle {
+            margin-top: 24px;
+        }
+
+        &__projects {
+            margin-top: 104px;
+            &-about {
+                display: none;
+            }
+            &-item {
+                width: 480px;
+                &:last-child {
+                    width: 480px;
+                    height: 480px;
+                    img {
+                        width: 251px;
+                        height: 331px;
+                    }
+                }
+                &__wider {
+                    width: 480px;
+                    height: 480px;
+                }
+            }
+            &-title {
+                &__tight {
+                    bottom: 71px;
+                }
+            }
+            &-link {
+                display: block;
+                &__right {
+                    left: 32px;
+                    right: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 695px) {
+    .our-project {
+        &__anchor-trail {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 525px) {
+    .our-project {
+        padding: 80px 0 0;
+
+        &__title {
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        &__subtitle {
+            margin-left: 25px;
+            margin-right: 25px;
+            width: auto;
+        }
+
+        &__anchor {
+            display: none;
+        }
+
+        &__anchor-trail {
+            display: none;
+        }
+
+        &__projects {
+            margin-top: 80px;
+            &-about {
+                display: none;
+            }
+            &-item {
+                width: 400px;
+                &:last-child {
+                    width: 400px;
+                    height: 400px;
+                    img {
+                        width: 121px;
+                        height: 161px;
+                    }
+                }
+                &__wider {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+            &-info {
+                top: 24px;
+                left: 24px;
+                width: 160px;
+            }
+            &-name,
+            &-date,
+            &-area {
+                font-size: 11px;
+            }
+            &-title {
+                bottom: 53px;
+                left: 24px;
+                &__tight {
+                    bottom: 53px;
+                }
+            }
+            &-link {
+                display: block;
+                bottom: 24px;
+                left: 24px;
+                &__right {
+                    left: 32px;
+                    right: auto;
+                }
+            }
+        }
+        &-text {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .our-project {
+        padding: 80px 0 0;
+        align-items: normal;
+
+        &__title {
+            font-size: 26px;
+            line-height: 32px;
+            margin-left: 23px;
+        }
+
+        &__subtitle {
+            margin: 0 23px;
+            text-align: left;
+            width: auto;
+        }
+
+        &__anchor {
+            display: none;
+        }
+
+        &__anchor-trail {
+            display: none;
+        }
+
+        &__projects {
+            margin-top: 80px;
+            &-about {
+                display: none;
+            }
+            &-item {
+                width: 327px;
+                &:last-child {
+                    width: 327px;
+                    height: 327px;
+                    img {
+                        width: 121px;
+                        height: 161px;
+                    }
+                }
+                &__wider {
+                    width: 327px;
+                    height: 327px;
+                }
+            }
+            &-info {
+                top: 24px;
+                left: 24px;
+                width: 160px;
+            }
+            &-name,
+            &-date,
+            &-area {
+                font-size: 11px;
+            }
+            &-title {
+                bottom: 53px;
+                left: 24px;
+                &__tight {
+                    bottom: 53px;
+                }
+            }
+            &-link {
+                display: block;
+                bottom: 24px;
+                left: 24px;
+                &__right {
+                    left: 32px;
+                    right: auto;
+                }
+            }
+        }
+        &-text {
+            font-size: 20px;
+            line-height: 25px;
+        }
     }
 }

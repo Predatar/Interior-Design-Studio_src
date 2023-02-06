@@ -77,6 +77,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &-burger {
+            height: 8px;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            span {
+                width: 28px;
+                height: 1px;
+                background-color: #fff;
+            }
+        }
     }
 
     &__lang {
@@ -111,6 +123,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            cursor: pointer;
             span {
                 width: 28px;
                 height: 1px;
@@ -176,6 +189,32 @@
         }
         .sidemenu {
             display: flex;
+        }
+    }
+}
+@media (max-width: 624px) {
+    .header {
+        height: 58px;
+        &__wrapper {
+            width: auto;
+            justify-content: flex-start;
+        }
+        &__logo {
+            margin-right: 0;
+        }
+
+        &__action {
+            width: 99px;
+            &-burger {
+                display: flex;
+            }
+        }
+
+        &__btn {
+            display: none;
+        }
+        .sidemenu {
+            display: none;
         }
     }
 }
