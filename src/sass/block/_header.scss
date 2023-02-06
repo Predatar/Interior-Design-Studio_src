@@ -141,9 +141,55 @@
     }
 }
 
+.header__dark {
+    padding: 0 55px;
+    .header__list-item {
+        &::after {
+            background: #000;
+        }
+    }
+
+    .header__link {
+        color: $second_text_color;
+        text-decoration: none;
+        &:hover {
+            color: $second_text_color;
+        }
+    }
+
+    .header__action {
+        &-burger {
+            span {
+                background-color: #000;
+            }
+        }
+    }
+
+    .header__lang {
+        color: $second_text_color;
+    }
+
+    .header__btn {
+        border: 1px solid rgba(0, 0, 0, 0.32);
+        color: $second_text_color;
+    }
+
+    .sidemenu {
+        .burger {
+            span {
+                background-color: #000;
+            }
+        }
+        &__title {
+            color: $second_text_color;
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .header {
         &__wrapper {
+            width: auto;
             justify-content: flex-start;
         }
         &__logo {
