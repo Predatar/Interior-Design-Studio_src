@@ -132,10 +132,42 @@
 @media (max-width: 768px) {
     .trail {
         width: 455px;
-        margin: 124px 0;
+        margin: 124px 20px;
         align-items: center;
         &__title {
             width: 366px;
+        }
+
+        &__subtitle {
+            width: auto;
+        }
+
+        &__btn {
+            margin-top: 48px;
+        }
+    }
+}
+@media (max-width: 525px) {
+    .trail {
+        width: 400px;
+    }
+}
+@media (max-width: 425px) {
+    .trail {
+        padding: 0 24px;
+        width: auto;
+        margin: 124px 0;
+        align-items: center;
+        &__title {
+            width: auto;
+            margin-right: 30px;
+            font-size: 26px;
+            line-height: 32px;
+            text-align: left;
+        }
+
+        &__subtitle {
+            text-align: left;
         }
 
         &__btn {

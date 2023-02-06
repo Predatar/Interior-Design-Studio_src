@@ -31,3 +31,20 @@
         margin-top: 103px;
     }
 }
+@media (max-width: 625px) {
+    .license {
+        &__made {
+            text-align: right;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .license {
+        margin-top: 56px;
+        height: 51px;
+        flex-direction: column;
+        &__made {
+            text-align: left;
+        }
+    }
+}
