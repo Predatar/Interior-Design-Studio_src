@@ -1,8 +1,14 @@
 .heading {
-    padding: 112px 198px 0;
+    padding: 0 55px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+
+    &__wrapper {
+        padding: 112px 143px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     &__title {
         font-weight: 700;

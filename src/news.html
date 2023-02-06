@@ -6,23 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-reboot.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    @@include('html/head.html', {})
     <link rel="stylesheet" href="css/style.news.min.css">
 </head>
 
 <body>
-    @@include('html/header.html', {theme: 'header__dark', src: 'icons/Logo-dark.svg'})
     <section class="heading">
-        <div class="heading__title">Our latest news</div>
-        <div class="heading__select">
-            <div class="heading__select-item">All</div>
-            <div class="heading__select-item">Blog</div>
-            <div class="heading__select-item">News</div>
-            <div class="heading__select-item">Advice from the designer</div>
+        @@include('html/header.html', {theme: 'header__dark', src: 'icons/Logo-dark.svg'})
+        <div class="heading__wrapper">
+            <div class="heading__title">Our latest news</div>
+            <div class="heading__select">
+                <div class="heading__select-item">All</div>
+                <div class="heading__select-item">Blog</div>
+                <div class="heading__select-item">News</div>
+                <div class="heading__select-item">Advice from the designer</div>
+            </div>
         </div>
     </section>
     <section class="news">
@@ -33,7 +31,7 @@
                     <div class="news__info-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel
                         gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus pellentesque ligula
                         ut aliquam.</div>
-                    <div class="news__info-link"><a href="#">Discover more</a></div>
+                    <div class="news__info-link"><a href="@html/one_news.html">Discover more</a></div>
                 </div>
                 <div class="news__img">
                     <img src="@img/news/news1.png" alt="interior">
