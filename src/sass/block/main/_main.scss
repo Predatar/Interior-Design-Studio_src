@@ -171,6 +171,7 @@
     .main {
         &__text {
             margin-left: 105px;
+            width: 440px;
         }
 
         &__title {
@@ -187,7 +188,7 @@
 
 @media (max-width: 768px) {
     .main {
-        padding-bottom: 32px;
+        padding: 0 48px 48px;
         &__text {
             margin-top: 287px;
             margin-left: 124px;

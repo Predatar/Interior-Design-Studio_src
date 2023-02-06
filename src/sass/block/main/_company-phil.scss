@@ -122,7 +122,7 @@
         }
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1248px) {
     .company-phil {
         padding: 124px 0 124px 159px;
 
@@ -135,6 +135,7 @@
             &-img {
                 width: 349px;
                 height: 439px;
+                margin-left: 10px;
             }
         }
 
@@ -180,6 +181,60 @@
 
         &__quote-anchor {
             display: none;
+        }
+    }
+}
+@media (max-width: 880px) {
+    .company-phil {
+        padding: 104px 124px;
+
+        &__wrapper {
+        }
+
+        &__info {
+            margin-top: 0;
+            width: 520px;
+            &-img {
+                display: none;
+            }
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__link {
+            margin-top: 40px;
+        }
+
+        &__info-anchor {
+            top: 122px;
+        }
+
+        &__quote {
+            margin-top: 161px;
+            padding-right: 0;
+            &-img {
+                width: 153px;
+                height: 191px;
+            }
+            &-subimg {
+                width: 383px;
+                height: 235px;
+                top: -140px;
+                left: 137px;
+            }
+        }
+
+        &__text {
+            margin-top: 213px;
+            width: 290px;
+            &::before {
+                left: -30px;
+                font-size: 26px;
+                line-height: 31px;
+            }
         }
     }
 }
