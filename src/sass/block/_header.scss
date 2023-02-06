@@ -153,3 +153,29 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .header {
+        &__wrapper {
+            width: 237px;
+            justify-content: flex-start;
+        }
+        &__logo {
+            margin-right: 93px;
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__action {
+            width: 231px;
+        }
+
+        &__btn {
+            padding: 15px 35px;
+        }
+        .sidemenu {
+            display: flex;
+        }
+    }
+}

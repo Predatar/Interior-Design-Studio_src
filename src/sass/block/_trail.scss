@@ -129,3 +129,17 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .trail {
+        width: 455px;
+        margin: 124px 0;
+        align-items: center;
+        &__title {
+            width: 366px;
+        }
+
+        &__btn {
+            margin-top: 48px;
+        }
+    }
+}

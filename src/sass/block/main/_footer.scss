@@ -133,7 +133,7 @@
         }
 
         &__contacts {
-            margin: 64px 101px 0 101px;
+            margin: 64px 101px 0;
         }
 
         &__cities {
@@ -149,6 +149,48 @@
         &__btn {
             margin-top: 64px;
             margin-left: 101px;
+        }
+    }
+}
+@media (max-width: 880px) {
+    .footer {
+        padding: 88px 48px 24px;
+        &__anchor {
+            top: 130px;
+            left: 32px;
+        }
+
+        &__title {
+            margin-left: 76px;
+        }
+
+        &__subtitle {
+            margin-left: 76px;
+        }
+
+        &__contacts {
+            margin: 58px 76px 0;
+            flex-wrap: wrap;
+            gap: 58px;
+            justify-content: end;
+        }
+
+        &__cities {
+            width: 100%;
+        }
+
+        &__social {
+            margin-top: 13px;
+            &-item {
+            }
+        }
+
+        &__btn {
+            margin-top: 0;
+            margin-left: 0;
+            position: absolute;
+            bottom: 166px;
+            left: 124px;
         }
     }
 }
