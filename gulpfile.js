@@ -65,8 +65,8 @@ gulp.task('html', function () {
 
 gulp.task('scripts', function () {
     return gulp
-        .src('src/js/script.js')
-        .pipe(webpack(require('./webpack.config')))
+        .src('src/js/*.js')
+        /* .pipe(webpack(require('./webpack.config'))) */
         .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.stream());
 });
