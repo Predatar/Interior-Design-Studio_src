@@ -1,0 +1,46 @@
+.heading {
+    padding: 0 63px 40px;
+    background: url('@img/oneProject/title_bg.png') center center/cover no-repeat;
+
+    &__wrapper {
+        margin-left: 135px;
+        margin-top: 166px;
+    }
+
+    &__caption {
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        color: $main_text_color;
+    }
+
+    &__subtitle {
+        margin-top: 24px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__info {
+        margin-top: 64px;
+        display: flex;
+    }
+
+    &__place {
+    }
+
+    &__calendar {
+    }
+
+    &__area {
+    }
+
+    &__social {
+    }
+
+    &__social-item {
+    }
+}

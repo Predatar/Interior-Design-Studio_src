@@ -95,6 +95,18 @@
     }
 }
 
+.trail__dark {
+    .trail__title {
+        color: $second_text_color;
+    }
+    .trail__subtitle {
+        color: $second_text_color;
+    }
+    .trail__btn {
+        border: 1px solid #08080832;
+    }
+}
+
 @media (max-width: 1248px) {
     .trail {
         width: 455px;
