@@ -1,0 +1,40 @@
+.main-text {
+    padding: 140px 197px;
+
+    &__title {
+        width: 419px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: $second_text_color;
+    }
+
+    &__subtitle {
+        margin-top: 17px;
+        width: 715px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        color: $second_text_color;
+        opacity: 0.7;
+    }
+
+    &__link {
+        margin-top: 40px;
+        a{
+            @include discover;
+            color: $second_text_color;
+            &:hover {
+                color: $second_text_color;
+                &::before,
+                &::after {
+                    background: rgba(0, 0, 0, 1);
+                }
+            }
+            &::before,
+            &::after {
+                background: rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+}
