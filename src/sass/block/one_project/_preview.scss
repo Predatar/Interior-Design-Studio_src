@@ -1,0 +1,26 @@
+.preview {
+    &__group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        &-item {
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+    &__btn {
+        margin: 0 auto;
+        margin-top: 80px;
+        display: block;
+        padding: 17px 48px;
+        border: 1px solid #08080832;
+        background: #fff;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 0.06em;
+        color: $second_text_color;
+    }
+}
