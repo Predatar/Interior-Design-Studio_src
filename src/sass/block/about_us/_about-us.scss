@@ -1,0 +1,99 @@
+.about-us {
+    padding: 140px 280px 40px 130px;
+    display: flex;
+    position: relative;
+
+    &__img {
+        margin-right: 132px;
+    }
+
+    &__wrapper {
+        margin-top: 90px;
+        width: 382px;
+        height: 426px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__year {
+        &-number {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 68px;
+            color: $second_text_color;
+        }
+        &-text {
+            margin-right: 115px;
+            width: 64px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 18px;
+            color: $second_text_color;
+        }
+    }
+
+    &__project {
+        &-number {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 68px;
+            color: $second_text_color;
+        }
+        &-text {
+            width: 84px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 18px;
+            color: $second_text_color;
+        }
+    }
+
+    &__coop {
+        margin-top: 44px;
+        &-number {
+            margin-right: 79px;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 68px;
+            color: $second_text_color;
+        }
+        &-text {
+            width: 81px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 18px;
+            color: $second_text_color;
+        }
+    }
+
+    &__entry {
+        margin-top: 44px;
+        &-number {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 68px;
+            color: $second_text_color;
+        }
+        &-text {
+            width: 94px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 18px;
+            color: $second_text_color;
+        }
+    }
+
+    &__text {
+        margin-top: 75px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        color: $second_text_color;
+    }
+
+    &__subimg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
