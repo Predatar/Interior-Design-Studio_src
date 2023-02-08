@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    @@include('html/head.html', {})
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.about_us.min.css">
+</head>
+
+<body>
+    <section class="heading">
+        @@include('html/header.html', {theme: 'header__dark', src: 'icons/Logo-dark.svg'})
+        <div class="heading__wrapper">
+            <div class="heading__caption">
+                <div class="heading__title">Company Philosophy </div>
+                <div class="heading__subtitle">The basic philosophy of our studio is to create individual, aesthetically
+                    stunning solutions for our customers by lightning-fast development of projects employing unique
+                    styles and architecture. </div>
+            </div>
+        </div>
+    </section>
+    <section class="comp-phil">
+        <div class="slider">
+            <div class="comp-phil__info">
+                <div class="comp-phil__title">
+                    Company Philosophy
+                </div>
+                <div class="comp-phil__subtitle">
+                    The basic philosophy of our studio is to create individual, aesthetically stunning solutions for our
+                    customers by lightning-fast development of projects employing unique styles and architecture.
+                </div>
+                <div class="slider__navigation">
+                    <div class="slider-button-prev">
+                        <img src="@icons/about_us/arrow-prew.svg" alt="arrow-prew">
+                    </div>
+                    <div class="slider__number">01</div>
+                    <div class="slider-scrollbar"></div>
+                    <div class="slider__number">04</div>
+                    <div class="slider-button-next">
+                        <img src="@icons/about_us/arrow-next.svg" alt="arrow-next">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="@img/about/slide1.png" alt="interior">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="@img/about/slide2.png" alt="interior">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="@img/about/slide2.png" alt="interior">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="@img/about/slide2.png" alt="interior">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- * JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.about_us.js"></script>
+</body>
+
+</html>
