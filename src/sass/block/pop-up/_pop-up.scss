@@ -1,0 +1,56 @@
+.pop-up {
+    width: 1046px;
+    height: 803px;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        width: 800px;
+        height: 354px;
+        padding: 44px 70px;
+        background: #fff;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        color: $second_text_color;
+    }
+
+    &__form {
+        margin-top: 38px;
+        width: 660px;
+        height: 207px;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.backdoor {
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__btn {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        z-index: 101;
+        top: 40px;
+        right: 40px;
+        cursor: pointer;
+        img {
+            vertical-align: top;
+        }
+    }
+}
