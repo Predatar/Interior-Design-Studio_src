@@ -1,0 +1,17 @@
+@import 'base/variables';
+@import 'base/animation';
+@import 'base/mixins';
+
+@import 'block/header';
+body {
+    background: url('@img/main/footer_bg.png') center center/cover no-repeat;
+    height: 100vh;
+}
+.heading {
+    padding: 0 63px;
+}
+@import 'block/main/footer';
+@import 'block/license';
+.footer {
+    background: none;
+}
