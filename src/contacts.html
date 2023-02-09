@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    @@include('html/head.html', {})
+    <link rel="stylesheet" href="css/style.contacts.min.css">
+</head>
+
+<body>
+    <section class="heading">
+        @@include('html/header.html', {theme: '', src: 'icons/Logo.svg'})
+    </section>
+    <main class="main">
+        <div class="main__title">Drop us a line</div>
+        <div class="main__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu
+            mauris vitae posuere. </div>
+        <div class="main__contacts">
+            <div class="main__cities">
+                <div class="main__city">
+                    <div class="main__city-title">Kyiv</div>
+                    <div class="main__city-subtitle">(209) 555-0104 <br>
+                        6391 Elgin St. Celina,
+                        Delaware 10299</div>
+                </div>
+                <div class="main__city">
+                    <div class="main__city-title">Lviv</div>
+                    <div class="main__city-subtitle">(209) 555-0104 <br>
+                        6391 Elgin St. Celina,
+                        Delaware 10299</div>
+                </div>
+                <div class="main__city">
+                    <div class="main__city-title">Kharkiv</div>
+                    <div class="main__city-subtitle">(209) 555-0104 <br>
+                        6391 Elgin St. Celina,
+                        Delaware 10299</div>
+                </div>
+            </div>
+            <div class="main__info">
+                <div class="main__email">
+                    <a href="mailto:info@gmail.com">info@gmail.com</a>
+                </div>
+                <div class="main__social">
+                    <div class="main__social-item">
+                        <a href="#">Fb</a>
+                    </div>
+                    <div class="main__social-item">
+                        <a href="#">In</a>
+                    </div>
+                    <div class="main__social-item">
+                        <a href="#">Be</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="main__btn">Make request</button>
+    </main>
+    <footer class="footer">
+        @@include('html/license.html', {src: '@icons/theFirsttheLast.svg'})
+    </footer>
+</body>
+
+</html>
