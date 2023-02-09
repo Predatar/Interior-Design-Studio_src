@@ -1,0 +1,36 @@
+.heading {
+    
+    .header {
+        padding: 0 63px;
+    }
+
+    &__wrapper {
+        width: 100%;
+        height: 648px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('@img/about/title_bg.png') center center/cover no-repeat;
+    }
+
+    &__caption {
+        width: 383px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        color: $main_text_color;
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-top: 24px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        color: $main_text_color;
+        text-align: center;
+    }
+}
