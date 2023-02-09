@@ -79,6 +79,20 @@
     }
 }
 
+.email__dark {
+    background-color: #000;
+    .email__img {
+        filter: drop-shadow(0px 0px 64px rgba(183, 183, 183, 0.16));
+        z-index: 10;
+    }
+    .email__link {
+        color: $main_text_color;
+    }
+    .email__subtitle {
+        color: $main_text_color;
+    }
+}
+
 @media (max-width: 1248px) {
     .email {
         height: 790px;
