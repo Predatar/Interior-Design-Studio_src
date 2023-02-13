@@ -8,9 +8,11 @@
     <title>Interior Design Studio</title>
     @@include('html/head.html', {})
     <link rel="stylesheet" href="css/style.main.min.css">
+    <link rel="stylesheet" href="css/style.pop_up.min.css">
 </head>
 
 <body>
+    @@include('html/popUp.html', {})
     <section class="main">
         @@include('html/header.html', {src: '@icons/Logo.svg'})
         <div class="main__text">
@@ -220,10 +222,10 @@
                 </div>
             </div>
         </div>
-        <button class="footer__btn">Make request</button>
+        <button class="footer__btn" id="makeRequest">Make request</button>
         @@include('html/license.html', {src: '@icons/theFirsttheLast.svg'})
     </footer>
-    <script src="./js/bundle.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const mainSelectSpan = document.querySelector('.main__select span');
     const mainOptionItem = document.querySelectorAll('.main__option-item');
 
+    const popUpBtn = document.querySelectorAll('#makeRequest');
+    const exit = document.querySelector('.backdoor__btn');
+    const backdoor = document.querySelector('.backdoor');
+
     mainOptionItem.forEach(elem => {
         elem.addEventListener('click', e => {
             mainSelectSpan.textContent = e.target.getAttribute('data-location');
@@ -14,7 +18,20 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // * Trail
+    popUpBtn.forEach(elem => {
+        elem.addEventListener('click', () => {
+            backdoor.classList.remove('hide');
+            document.body.classList.add('overflow');
+        });
+    });
+    exit.addEventListener('click', () => {
+        backdoor.classList.add('hide');
+        document.body.classList.remove('overflow');
+    });
+
+    /*  
+    
+    * Trail
 
     const trailImg = document.querySelectorAll('.trail__group-item');
 
@@ -27,9 +44,9 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // * out project
+    * out project
 
-    /* const ourProjectItem = document.querySelectorAll('.our-project__projects-item');
+    const ourProjectItem = document.querySelectorAll('.our-project__projects-item');
     window.addEventListener('resize', () => {
         console.log(window.innerWidth);
         if (window.innerWidth <= 1035) {
