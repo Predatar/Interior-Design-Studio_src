@@ -1,5 +1,6 @@
 .main {
-    padding: 0 722px 0 265px;
+    padding-left: 265px;
+    width: 600px;
     position: relative;
 
     &__title {
@@ -43,6 +44,66 @@
         left: 69px;
         &::before {
             background: rgba(255, 255, 255, 0.04);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .main {
+        padding-left: 211px;
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__subtitle {
+        }
+
+        &__link {
+        }
+
+        &__anchor {
+        }
+    }
+}
+@media (max-width: 768px) {
+    .main {
+        padding-left: 185px;
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__subtitle {
+        }
+
+        &__link {
+        }
+
+        &__anchor {
+        }
+    }
+}
+@media (max-width: 624px) {
+    .main {
+        padding-left: 24px;
+        width: auto;
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__subtitle {
+        }
+
+        &__link {
+        }
+
+        &__anchor {
+            display: none;
         }
     }
 }
