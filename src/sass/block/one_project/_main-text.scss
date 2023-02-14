@@ -21,7 +21,7 @@
 
     &__link {
         margin-top: 40px;
-        a{
+        a {
             @include discover;
             color: $second_text_color;
             &:hover {
@@ -36,5 +36,41 @@
                 background: rgba(0, 0, 0, 0.4);
             }
         }
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-text {
+        padding: 124px 263px 124px 159px;
+
+        &__subtitle {
+            margin-top: 16px;
+            width: auto;
+        }
+    }
+}
+@media (max-width: 894px) {
+    .main-text {
+        padding: 104px 124px;
+
+        &__title {
+            width: auto;
+        }
+
+        &__subtitle {
+            margin-top: 24px;
+        }
+    }
+}
+
+@media (max-width: 624px) {
+    .main-text {
+        padding: 104px 98px;
+    }
+}
+
+@media (max-width: 525px) {
+    .main-text {
+        padding: 80px 24px;
     }
 }
