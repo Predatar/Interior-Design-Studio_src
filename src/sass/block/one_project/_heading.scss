@@ -15,6 +15,9 @@
         font-size: 36px;
         line-height: 44px;
         color: $main_text_color;
+        br {
+            display: none;
+        }
     }
 
     &__subtitle {
@@ -83,5 +86,156 @@
     }
 
     &__social-item {
+    }
+}
+
+@media (max-width: 1024px) {
+    .heading {
+        padding: 0 54px 33px;
+
+        &__wrapper {
+            margin-top: 136px;
+            margin-left: 105px;
+        }
+
+        &__caption {
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            width: 452px;
+            br {
+                display: block;
+            }
+        }
+
+        &__subtitle {
+        }
+
+        &__info {
+            margin-top: 48px;
+        }
+
+        &__place {
+        }
+
+        &__calendar {
+        }
+
+        &__area {
+        }
+
+        &__social {
+            margin-top: 175px;
+            &::before {
+                left: -105px;
+            }
+        }
+
+        &__social-item {
+        }
+    }
+}
+@media (max-width: 768px) {
+    .heading {
+        padding: 0 54px 33px;
+
+        &__wrapper {
+            margin-top: 272px;
+            margin-left: 76px;
+        }
+
+        &__caption {
+        }
+
+        &__title {
+            width: auto;
+            br {
+                display: block;
+            }
+        }
+
+        &__subtitle {
+        }
+
+        &__info {
+            margin-top: 32px;
+        }
+
+        &__place {
+        }
+
+        &__calendar {
+        }
+
+        &__area {
+        }
+
+        &__social {
+            margin-top: 311px;
+            &::before {
+                left: -76px;
+            }
+        }
+
+        &__social-item {
+        }
+    }
+}
+@media (max-width: 624px) {
+    .heading {
+        padding: 0 24px 33px;
+
+        &__wrapper {
+            margin-top: 48px;
+            margin-left: 0;
+            width: auto;
+        }
+
+        &__caption {
+        }
+
+        &__title {
+            font-size: 26px;
+            line-height: 32px;
+            br {
+                display: block;
+            }
+        }
+
+        &__subtitle {
+            margin-top: 16px;
+            width: auto;
+        }
+
+        &__info {
+            margin-top: 32px;
+            height: 96px;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__place {
+        }
+
+        &__calendar {
+        }
+
+        &__area {
+        }
+
+        &__social {
+            margin-top: 58px;
+            margin-left: 62px;
+            &::before {
+                left: -61px;
+            }
+        }
+
+        &__social-item {
+        }
     }
 }
