@@ -25,6 +25,9 @@
         margin-top: 40px;
         padding-left: 1rem;
         list-style: circle;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
         &-item {
             font-weight: 300;
             font-size: 14px;
@@ -44,6 +47,24 @@
         color: $second_text_color;
         opacity: 0.7;
     }
+
+    &__social {
+        display: none;
+        margin-top: 48px;
+        &-title {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        &-list {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            width: 121px;
+        }
+        &-item {
+        }
+    }
 }
 .divider {
     height: 1px;
@@ -52,19 +73,103 @@
     opacity: 0.16;
 }
 
-/* .sub-text {
+@media (max-width: 1024px) {
+    .sub-text {
+        padding: 88px 56px 0;
+        &__title {
+            margin-left: 103px;
+            margin-right: 94px;
+        }
 
-    &__title {
-    }
+        &__text {
+            margin-left: 103px;
+            margin-right: 94px;
+            width: auto;
+        }
 
-    &__text {
-    }
+        &__list {
+            margin-left: 103px;
+            margin-right: 94px;
+            
+            &-item {
+            }
+        }
 
-    &__list {
-        &-item {
+        &__subtext {
+            margin-left: 103px;
+            margin-right: 94px;
+            width: auto;
+        }
+
+        &__social {
+            display: block;
+            margin-left: 103px;
         }
     }
-
-    &__subtext {
+    .divider {
+        margin: 88px 159px 124px;
     }
-} */
+}
+@media (max-width: 768px) {
+    .sub-text {
+        padding: 72px 48px 0;
+        &__title {
+            margin-left: 76px;
+        }
+
+        &__text {
+            margin: 24px 76px 0;
+            width: auto;
+        }
+
+        &__list {
+            margin: 32px 76px 0;
+            width: auto;
+            &-item {
+            }
+        }
+
+        &__subtext {
+            margin: 32px 76px 0;
+            width: auto;
+        }
+
+        &__social {
+            margin-top: 40px;
+            margin-left: 76px;
+        }
+    }
+    .divider {
+        margin: 72px 0 104px 124px;
+    }
+}
+@media (max-width: 624px) {
+    .sub-text {
+        padding: 64px 24px 0;
+        &__title {
+            margin-left: 0;
+        }
+
+        &__text {
+            margin: 24px 0 0;
+        }
+
+        &__list {
+            margin: 32px 0 0;
+            &-item {
+            }
+        }
+
+        &__subtext {
+            margin: 32px 0 0;
+        }
+
+        &__social {
+            margin-top: 32px;
+            margin-left: 0;
+        }
+    }
+    .divider {
+        margin: 64px 24px 80px;
+    }
+}

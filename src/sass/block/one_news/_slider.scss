@@ -49,3 +49,35 @@
         color: $third_text_color;
     }
 }
+
+@media (max-width: 1024px) {
+    .slider {
+        padding-left: 159px;
+    }
+    .swiper {
+        margin-top: 64px;
+    }
+}
+@media (max-width: 768px) {
+    .slider {
+        padding-left: 124px;
+    }
+    .swiper {
+        margin-top: 56px;
+    }
+}
+@media (max-width: 624px) {
+    .slider {
+        padding-left: 24px;
+        &__title {
+            font-size: 26px;
+            line-height: 32px;
+        }
+        &__anchor {
+            display: none;
+        }
+    }
+    .swiper {
+        margin-top: 40px;
+    }
+}
