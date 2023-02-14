@@ -1,5 +1,5 @@
 .main {
-    padding: 119px 64px 25px;
+    padding: 0 64px;
     position: relative;
 
     &__title {
@@ -104,7 +104,7 @@
 }
 @media (max-width: 1248px) {
     .main {
-        padding: 104px 56px 32px;
+        padding: 0 56px;
         &__anchor {
             top: 130px;
             left: 32px;
@@ -142,7 +142,7 @@
 }
 @media (max-width: 880px) {
     .main {
-        padding: 88px 48px 24px;
+        padding: 0 48px;
 
         &__title {
             margin-left: 76px;
@@ -173,7 +173,7 @@
             margin-top: 0;
             margin-left: 0;
             position: absolute;
-            bottom: 166px;
+            bottom: 8px;
             left: 124px;
         }
     }
@@ -181,7 +181,7 @@
 
 @media (max-width: 625px) {
     .main {
-        padding: 56px 24px 24px;
+        padding: 0 24px;
 
         &__title {
             margin-left: 0;
@@ -232,7 +232,7 @@
 
 @media (max-width: 425px) {
     .main {
-        padding: 56px 24px 24px;
+        padding: 0 24px;
 
         &__title {
             margin-left: 0;
