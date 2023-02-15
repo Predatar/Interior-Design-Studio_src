@@ -5,12 +5,7 @@ body {
     position: relative;
 }
 
-.hide {
-    display: none !important;
-}
-.overflow {
-    overflow: hidden !important;
-}
+
 
 @import 'block/header';
 @import 'block/main/_main';
