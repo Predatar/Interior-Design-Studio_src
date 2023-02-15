@@ -3,6 +3,7 @@
         <form class="form">
             <div class="form__container1">
                 <div class="form__title">Calculate the cost of work</div>
+                <div class="form__title2">Make Request</div>
                 <div class="form__container1-wrapper">
                     <div class="wave-group">
                         <input required="" type="text" class="input" name="name" id="name">
@@ -96,7 +97,7 @@
             <div class="form__container2">
                 <div class="form__subtitle">Area (m2)</div>
                 <div class="form__container2-wrapper">
-                    <fieldset>
+                    <fieldset class="form__container2-fieldset">
                         <input type="radio" value="to 50" name="area" id="area">
                         <!-- * ---------------- -->
                         <input type="radio" value="50-150" name="area" id="area" checked>
@@ -114,6 +115,28 @@
                         <input type="radio" value="1000+" name="area" id="area">
                         <div></div>
                     </fieldset>
+                    <div class="form__container3-wrapper">
+                        <fieldset class="form__container3-fieldset">
+                            <input type="radio" value="to 50" name="area" id="area">
+                            <!-- * ---------------- -->
+                            <input type="radio" value="50-150" name="area" id="area" checked>
+                            <!-- * ---------------- -->
+                            <input type="radio" value="150-250" name="area" id="area">
+                            <!-- * ---------------- -->
+                            <input type="radio" value="250-400" name="area" id="area">
+                            <div></div>
+                        </fieldset>
+                        <fieldset class="form__container3-fieldset">
+                            <input type="radio" value="400-600" name="area" id="area">
+                            <!-- * ---------------- -->
+                            <input type="radio" value="600-800" name="area" id="area">
+                            <!-- * ---------------- -->
+                            <input type="radio" value="800-1000" name="area" id="area">
+                            <!-- * ---------------- -->
+                            <input type="radio" value="1000+" name="area" id="area">
+                            <div></div>
+                        </fieldset>
+                    </div>
                     <div class="form__input-file">
                         <input type="file" name="file" id="file">
                         <label for="file"></label>
