@@ -78,3 +78,46 @@
 .wave-group .input:focus ~ .bar:after {
     width: 50%;
 }
+
+@media (max-width: 1248px) {
+    .wave-group .input {
+        width: 285px;
+        &__wider {
+            width: 602px;
+        }
+    }
+    .wave-group .bar {
+        width: 285px;
+        &__wider {
+            width: 602px;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .wave-group .input {
+        width: 366px;
+        &__wider {
+            width: 366px;
+        }
+    }
+    .wave-group .bar {
+        width: 366px;
+        &__wider {
+            width: 366px;
+        }
+    }
+}
+@media (max-width: 675px) {
+    .wave-group .input {
+        width: 279px;
+        &__wider {
+            width: 279px;
+        }
+    }
+    .wave-group .bar {
+        width: 279px;
+        &__wider {
+            width: 279px;
+        }
+    }
+}
