@@ -34,3 +34,39 @@
         text-align: center;
     }
 }
+@media (max-width: 1024px) {
+    .heading {
+        .header {
+            padding: 0 54px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .heading {
+        .header {
+            padding: 0 48px;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .heading {
+
+        .header {
+            padding: 0 24px;
+        }
+
+		&__wrapper {
+            padding: 0 24px;
+		}
+
+		&__caption {
+		}
+
+		&__title {
+		}
+
+		&__subtitle {
+		}
+}
+
+}

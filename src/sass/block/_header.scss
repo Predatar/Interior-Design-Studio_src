@@ -86,9 +86,21 @@
             justify-content: space-between;
             cursor: pointer;
             span {
+                transition: all .1s;
                 width: 28px;
                 height: 1px;
                 background-color: #fff;
+                position: relative;
+            }
+            &__active {
+                span {
+                    transform: rotate(45deg);
+                    top: 4px;
+                    &:last-child {
+                        transform: rotate(-45deg);
+                        top: -2px;
+                    }
+                }
             }
         }
     }
@@ -120,6 +132,7 @@
         width: 87px;
         display: none;
         align-items: center;
+        cursor: pointer;
         .burger {
             height: 8px;
             display: flex;
@@ -127,9 +140,21 @@
             justify-content: space-between;
             cursor: pointer;
             span {
+                transition: all .1s;
                 width: 28px;
                 height: 1px;
                 background-color: #fff;
+                position: relative;
+            }
+            &__active {
+                span {
+                    transform: rotate(45deg);
+                    top: 4px;
+                    &:last-child {
+                        transform: rotate(-45deg);
+                        top: -2px;
+                    }
+                }
             }
         }
         &__title {
@@ -139,6 +164,12 @@
             line-height: 13px;
             letter-spacing: 0.06em;
             color: $main_text_color;
+            transition: all .5s;
+            position: relative;
+            &__active {
+                transform: translateX(-50%);
+                opacity: 0;
+            }
         }
     }
 }

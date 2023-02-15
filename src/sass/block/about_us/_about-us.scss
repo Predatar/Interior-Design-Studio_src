@@ -1,11 +1,16 @@
 .about-us {
-    padding: 140px 280px 40px 130px;
+    padding: 140px 260px 40px 130px;
     display: flex;
     justify-content: center;
     position: relative;
 
     &__img {
         margin-right: 132px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     &__wrapper {
@@ -96,5 +101,361 @@
         position: absolute;
         bottom: 0;
         right: 0;
+    }
+}
+@media (max-width: 1356px) {
+    .about-us {
+        padding-right: 150px;
+        padding-left: 150px;
+        &__img {
+            margin-right: 100px;
+        }
+
+        &__wrapper {
+            margin-top: 50px;
+        }
+
+        &__year {
+            &-number {
+                font-size: 48px;
+                line-height: 52px;
+            }
+            &-text {
+            }
+        }
+
+        &__project {
+            &-number {
+                font-size: 48px;
+                line-height: 52px;
+            }
+            &-text {
+            }
+        }
+
+        &__coop {
+            &-number {
+                font-size: 48px;
+                line-height: 52px;
+            }
+            &-text {
+            }
+        }
+
+        &__entry {
+            &-number {
+                font-size: 48px;
+                line-height: 52px;
+            }
+            &-text {
+            }
+        }
+
+        &__text {
+            margin-top: 25px;
+        }
+
+        &__subimg {
+            display: none;
+        }
+    }
+}
+@media (max-width: 1088px) {
+    .about-us {
+        padding-left: 100px;
+        padding-right: 100px;
+        &__img {
+            margin-right: 50px;
+        }
+
+        &__wrapper {
+            margin-top: 25px;
+        }
+
+        &__year {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__project {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__coop {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__entry {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__text {
+        }
+
+        &__subimg {
+        }
+    }
+}
+@media (max-width: 938px) {
+    .about-us {
+        padding-left: 50px;
+        padding-right: 50px;
+        &__img {
+        }
+
+        &__wrapper {
+        }
+
+        &__year {
+            &-number {
+                font-size: 42px;
+            }
+            &-text {
+            }
+        }
+
+        &__project {
+            &-number {
+                font-size: 42px;
+            }
+            &-text {
+            }
+        }
+
+        &__coop {
+            &-number {
+                font-size: 42px;
+            }
+            &-text {
+            }
+        }
+
+        &__entry {
+            &-number {
+                font-size: 42px;
+            }
+            &-text {
+            }
+        }
+
+        &__text {
+        }
+
+        &__subimg {
+        }
+    }
+}
+@media (max-width: 804px) {
+    .about-us {
+        flex-direction: column-reverse;
+
+        &__img {
+            height: 500px;
+            margin-top: 25px;
+            margin-right: 0;
+        }
+
+        &__wrapper {
+            margin-top: 0;
+        }
+
+        &__year {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__project {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__coop {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__entry {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__text {
+        }
+
+        &__subimg {
+            display: block;
+            top: 140px;
+            right: 50px;
+        }
+    }
+}
+@media (max-width: 584px) {
+    .about-us {
+        padding-left: 24px;
+        padding-right: 24px;
+        &__img {
+        }
+
+        &__wrapper {
+        }
+
+        &__year {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__project {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__coop {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__entry {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__text {
+        }
+
+        &__subimg {
+            right: 24px;
+        }
+    }
+}
+@media (max-width: 540px) {
+    .about-us {
+        &__img {
+            height: 400px;
+        }
+
+        &__wrapper {
+            width: auto;
+        }
+
+        &__year {
+            &-number {
+                font-size: 36px;
+                line-height: 42px;
+            }
+            &-text {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+
+        &__project {
+            &-number {
+                font-size: 36px;
+                line-height: 42px;
+            }
+            &-text {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+
+        &__coop {
+            &-number {
+                font-size: 36px;
+                line-height: 42px;
+            }
+            &-text {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+
+        &__entry {
+            &-number {
+                font-size: 36px;
+                line-height: 42px;
+            }
+            &-text {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+
+        &__text {
+        }
+
+        &__subimg {
+            display: none;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .about-us {
+        &__img {
+        }
+
+        &__wrapper {
+        }
+
+        &__year {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__project {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__coop {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__entry {
+            &-number {
+            }
+            &-text {
+            }
+        }
+
+        &__text {
+        }
+
+        &__subimg {
+        }
     }
 }

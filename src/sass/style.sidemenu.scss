@@ -6,6 +6,8 @@
     padding: 212px 422px 40px 56px;
     position: fixed;
     top: 0;
+    left: -150%;
+    transition: all 0.5s;
     z-index: 25;
     background: rgba(0, 0, 0, 0.98);
 
@@ -33,6 +35,20 @@
             transition: all 0.2s;
             &:hover {
                 opacity: 1;
+            }
+        }
+        &-btn {
+            display: none;
+            button {
+                width: 158px;
+                height: 42px;
+                border: 1px solid #ffffff;
+                background: transparent;
+                font-size: 11px;
+                line-height: 13px;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: $main_text_color;
             }
         }
     }
@@ -134,6 +150,139 @@
             &:hover {
                 color: $main_text_color;
             }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .sidemenu {
+        &__main {
+        }
+
+        &__main-list {
+        }
+
+        &__main-item {
+        }
+
+        &__footer {
+        }
+
+        &__social-list {
+        }
+
+        &__social-item {
+        }
+
+        &__select {
+        }
+
+        &__option {
+        }
+
+        &__option-item {
+        }
+
+        &__contacts {
+        }
+
+        &__tel {
+        }
+
+        &__email {
+        }
+    }
+}
+@media (max-width: 768px) {
+    .sidemenu {
+        padding: 212px 0 40px 56px;
+
+        &__main {
+            margin-left: 140px;
+        }
+
+        &__main-list {
+        }
+
+        &__main-item {
+        }
+
+        &__footer {
+        }
+
+        &__social-list {
+        }
+
+        &__select {
+        }
+
+        &__option {
+        }
+
+        &__option-item {
+        }
+
+        &__contacts {
+        }
+
+        &__tel {
+        }
+
+        &__email {
+        }
+    }
+}
+@media (max-width: 624px) {
+    .sidemenu {
+        padding: 152px 24px 24px;
+
+        &__main {
+            margin: 0 auto;
+        }
+
+        &__main-list {
+            align-items: center;
+        }
+
+        &__main-item {
+            &-btn {
+                display: block;
+            }
+        }
+
+        &__footer {
+            width: 100%;
+            align-items: center;
+            margin-top: 105px;
+        }
+
+        &__social-list {
+            display: none;
+        }
+
+        &__social-item {
+        }
+
+        &__select {
+        }
+
+        &__option {
+        }
+
+        &__option-item {
+        }
+
+        &__contacts {
+            width: auto;
+            flex-direction: column;
+        }
+
+        &__tel {
+            text-align: right;
+        }
+
+        &__email {
+            text-align: right;
         }
     }
 }
