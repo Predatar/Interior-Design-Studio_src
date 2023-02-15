@@ -3,7 +3,6 @@ window.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 12,
         slidesPerView: 'auto',
         grabCursor: true,
-        centeredSlides: true,
         navigation: {
             nextEl: '.slider-button-next',
             prevEl: '.slider-button-prev'

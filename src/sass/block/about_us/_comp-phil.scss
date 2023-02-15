@@ -63,6 +63,11 @@
 
     &-slide {
         width: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
     &-scrollbar {
         /* &-drag {
@@ -71,5 +76,165 @@
             background: #000000;
             opacity: 0.7;
         } */
+    }
+}
+
+@media (max-width:1356px) {
+    .comp-phil {
+        padding-left: 190px;
+        &__info {
+            margin-right: 102px;
+        }
+    }
+    .swiper-slide {
+    width: 75%;
+    }
+}
+
+@media (max-width: 1248px) {
+    .comp-phil {
+        padding-left: 100px;
+
+        &__info {
+            margin-top: 50px;
+            margin-right: 100px;
+        }
+
+        &__title {
+        }
+
+        &__subtitle {
+        }
+    }
+    .slider {
+        &__navigation {
+        }
+
+        &__number {
+        }
+    }
+    .slider-button-prev {
+    }
+    .slider-scrollbar {
+    }
+    .slider-button-next {
+    }
+    .swiper {
+    }
+    .swiper-wrapper {
+    }
+    .swiper-slide {
+    }
+}
+@media (max-width: 1024px) {
+    .comp-phil {
+        padding-left: 100px;
+
+        &__info {
+            margin-right: 100px;
+        }
+
+        &__title {
+        }
+
+        &__subtitle {
+        }
+    }
+    .slider {
+        flex-direction: column;
+        &__navigation {
+        }
+
+        &__number {
+        }
+    }
+    .slider-button-prev {
+    }
+    .slider-scrollbar {
+    }
+    .slider-button-next {
+    }
+    .swiper {
+        margin-top: 50px;
+    }
+    .swiper-wrapper {
+    }
+    .swiper-slide {
+        height: 400px;
+    }
+}
+@media (max-width: 624px) {
+    .comp-phil {
+        padding: 50px 24px 0;
+
+        &__info {
+            margin-right: 0;
+        }
+
+        &__title {
+        }
+
+        &__subtitle {
+        }
+    }
+    .slider {
+        &__navigation {
+        }
+
+        &__number {
+        }
+    }
+    .slider-button-prev {
+    }
+    .slider-scrollbar {
+    }
+    .slider-button-next {
+    }
+    .swiper {
+        margin-top: 50px;
+    }
+    .swiper-wrapper {
+    }
+    .swiper-slide {
+        height: 400px;
+    }
+}
+@media (max-width: 425px) {
+    .comp-phil {
+
+        &__info {
+            width: auto;
+            margin-right: 0;
+        }
+
+        &__title {
+        }
+
+        &__subtitle {
+            width: auto;
+        }
+    }
+    .slider {
+        &__navigation {
+            width: 100%;
+        }
+
+        &__number {
+        }
+    }
+    .slider-button-prev {
+    }
+    .slider-scrollbar {
+        width: 75%;
+    }
+    .slider-button-next {
+    }
+    .swiper {
+        margin-top: 50px;
+    }
+    .swiper-wrapper {
+    }
+    .swiper-slide {
+        height: 200px;
     }
 }

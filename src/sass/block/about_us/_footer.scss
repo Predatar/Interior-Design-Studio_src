@@ -102,3 +102,226 @@
         }
     }
 }
+
+@media (max-width: 1248px) {
+    .footer {
+
+		&__container {
+		}
+
+		&__wrapper {
+            margin-left: 75px;
+		}
+
+		&__title {
+		}
+
+		&__form {
+            margin-top: 100px;
+		}
+
+		&__input {
+		}
+
+		&__btn {
+		}
+
+		&__subwrapper {
+            margin-right: 75px;
+		}
+
+		&__subtitle {
+		}
+
+		&__info {
+		}
+
+		&__email {
+		}
+
+		&__social {
+		}
+
+		&__social-item {
+		}
+}
+
+}
+@media (max-width: 1088px) {
+    .footer {
+        padding-top: 100px;
+
+		&__container {
+		}
+
+		&__wrapper {
+            margin-left: 0;
+		}
+
+		&__title {
+		}
+
+		&__form {
+            margin-top: 100px;
+		}
+
+		&__input {
+		}
+
+		&__btn {
+		}
+
+		&__subwrapper {
+            margin-right: 0;
+		}
+
+		&__subtitle {
+		}
+
+		&__info {
+		}
+
+		&__email {
+		}
+
+		&__social {
+		}
+
+		&__social-item {
+		}
+}
+
+}
+@media (max-width: 922px) {
+    .footer {
+
+		&__container {
+		}
+
+		&__wrapper {
+            width: 300px;
+		}
+
+		&__title {
+		}
+
+		&__form {
+            width: auto;
+		}
+
+		&__input {
+		}
+
+		&__btn {
+		}
+
+		&__subwrapper {
+            width: 300px;
+		}
+
+		&__subtitle {
+		}
+
+		&__info {
+		}
+
+		&__email {
+		}
+
+		&__social {
+		}
+
+		&__social-item {
+		}
+}
+
+}
+@media (max-width: 768px) {
+    .footer {
+        padding-top: 50px;
+
+		&__container {
+            flex-direction: column;
+		}
+
+		&__wrapper {
+            width: auto;
+		}
+
+		&__title {
+		}
+
+		&__form {
+            margin-top: 25px;
+		}
+
+		&__input {
+		}
+
+		&__btn {
+		}
+
+		&__subwrapper {
+            margin-top: 50px;
+            width: auto;
+		}
+
+		&__subtitle {
+		}
+
+		&__info {
+		}
+
+		&__email {
+		}
+
+		&__social {
+		}
+
+		&__social-item {
+		}
+}
+
+}
+@media (max-width: 425px) {
+    .footer {
+        padding: 50px 24px 24px;
+		&__container {
+		}
+
+		&__wrapper {
+		}
+
+		&__title {
+		}
+
+		&__form {
+		}
+
+		&__input {
+            font-size: 16px;
+		}
+
+		&__btn {
+		}
+
+		&__subwrapper {
+		}
+
+		&__subtitle {
+		}
+
+		&__info {
+		}
+
+		&__email {
+		}
+
+		&__social {
+		}
+
+		&__social-item {
+		}
+}
+
+}
