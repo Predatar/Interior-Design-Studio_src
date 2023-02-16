@@ -8,11 +8,15 @@
     @@include('html/head.html', {})
     <title>Residence by the lighthouse</title>
     <link rel="stylesheet" href="css/style.one_project.min.css">
+    <link rel="stylesheet" href="css/style.pop_up.min.css">
+    <link rel="stylesheet" href="css/style.sidemenu.min.css">
 </head>
 
 <body>
+    @@include('html/popUp.html', {})
+    @@include('html/sidemenu.html', {})
+    @@include('html/header.html', {theme: '', src: 'icons/Logo.svg'})
     <section class="heading">
-        @@include('html/header.html', {theme: '', src: 'icons/Logo.svg'})
         <div class="heading__wrapper">
             <div class="heading__caption">
                 <div class="heading__title">Residence <br> by the lighthouse</div>
@@ -63,8 +67,10 @@
     <section class="preview">
         <div class="preview__group">
             <div class="preview__group-item"><img src="@img/oneProject/interior1.png" alt="interior"></div>
-            <div class="preview__group-item preview__group-item__slim"><img src="@img/oneProject/interior2.png" alt="interior"></div>
-            <div class="preview__group-item preview__group-item__slim"><img src="@img/oneProject/interior3.png" alt="interior"></div>
+            <div class="preview__group-item preview__group-item__slim"><img src="@img/oneProject/interior2.png"
+                    alt="interior"></div>
+            <div class="preview__group-item preview__group-item__slim"><img src="@img/oneProject/interior3.png"
+                    alt="interior"></div>
             <div class="preview__group-item"><img src="@img/oneProject/interior4.png" alt="interior"></div>
         </div>
         <button class="preview__btn">View more photo</button>
@@ -80,6 +86,8 @@
         </div>
         <div class="more-project__anchor">Make request</div>
     </section>
+    <script src="js/script.header.js"></script>
+    <script src="js/script.pop-up.js"></script>
 </body>
 
 </html>

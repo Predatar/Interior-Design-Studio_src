@@ -12,12 +12,11 @@ body {
 
 @media (max-width: 425px) {
     body{
-        height: 125vh;
+        height: 100%;
     }
 }
 
 @import 'block/header';
-@import 'block/contacts/heading';
 @import 'block/contacts/main';
 @import 'block/contacts/footer';
 @import 'block/license';

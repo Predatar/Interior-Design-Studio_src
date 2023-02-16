@@ -8,12 +8,14 @@
     <title>Contacts</title>
     @@include('html/head.html', {})
     <link rel="stylesheet" href="css/style.contacts.min.css">
+    <link rel="stylesheet" href="css/style.pop_up.min.css">
+    <link rel="stylesheet" href="css/style.sidemenu.min.css">
 </head>
 
 <body>
-    <section class="heading">
-        @@include('html/header.html', {theme: '', src: 'icons/Logo.svg'})
-    </section>
+    @@include('html/popUp.html', {})
+    @@include('html/sidemenu.html', {})
+    @@include('html/header.html', {theme: '', src: 'icons/Logo.svg'})
     <main class="main">
         <div class="main__title">Get in touch</div>
         <div class="main__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu
@@ -61,6 +63,8 @@
     <footer class="footer">
         @@include('html/license.html', {src: '@icons/theFirsttheLast.svg'})
     </footer>
+    <script src="js/script.header.js"></script>
+    <script src="js/script.pop-up.js"></script>
 </body>
 
 </html>

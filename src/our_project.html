@@ -8,11 +8,16 @@
     @@include('html/head.html', {})
     <title>Our project</title>
     <link rel="stylesheet" href="css/style.our_project.min.css">
+    <link rel="stylesheet" href="css/style.pop_up.min.css">
+    <link rel="stylesheet" href="css/style.sidemenu.min.css">
 </head>
 
 <body>
+    @@include('html/popUp.html', {})
+    @@include('html/sidemenu.html', {})
+    @@include('html/header.html', {theme: 'header__dark', src: 'icons/Logo-dark.svg'})
     <section class="heading">
-        @@include('html/header.html', {theme: 'header__dark', src: 'icons/Logo-dark.svg'})
+        
         <div class="heading__wrapper">
             <div class="heading__caption">
                 <div class="heading__title">Our Projects</div>
@@ -112,6 +117,8 @@
     <footer class="footer">
         @@include('html/license.html', {src: '@icons/theFirsttheLast-dark.svg'})
     </footer>
+    <script src="js/script.header.js"></script>
+    <script src="js/script.pop-up.js"></script>
 </body>
 
 </html>

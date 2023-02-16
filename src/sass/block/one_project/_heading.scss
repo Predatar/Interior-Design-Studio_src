@@ -1,10 +1,9 @@
 .heading {
-    padding: 0 63px 40px;
+    padding: 262px 63px 40px;
     background: url('@img/oneProject/title_bg.png') center center/cover no-repeat;
 
     &__wrapper {
         margin-left: 135px;
-        margin-top: 166px;
     }
 
     &__caption {
@@ -91,10 +90,9 @@
 
 @media (max-width: 1024px) {
     .heading {
-        padding: 0 54px 33px;
+        padding: 232px 54px 33px;
 
         &__wrapper {
-            margin-top: 136px;
             margin-left: 105px;
         }
 
@@ -139,10 +137,9 @@
 }
 @media (max-width: 768px) {
     .heading {
-        padding: 0 54px 33px;
+        padding: 368px 54px 33px;
 
         &__wrapper {
-            margin-top: 272px;
             margin-left: 76px;
         }
 
@@ -185,10 +182,9 @@
 }
 @media (max-width: 624px) {
     .heading {
-        padding: 0 24px 33px;
+        padding: 107px 24px 33px;
 
         &__wrapper {
-            margin-top: 48px;
             margin-left: 0;
             width: auto;
         }

@@ -8,12 +8,14 @@
     <title>Page 404</title>
     @@include('html/head.html', {})
     <link rel="stylesheet" href="css/style.page404.min.css">
+    <link rel="stylesheet" href="css/style.pop_up.min.css">
+    <link rel="stylesheet" href="css/style.sidemenu.min.css">
 </head>
 
 <body>
-    <section class="heading">
-        @@include('html/header.html', {theme: '', src: 'icons/Logo.svg'})
-    </section>
+    @@include('html/popUp.html', {})
+    @@include('html/sidemenu.html', {})
+    @@include('html/header.html', {theme: '', src: 'icons/Logo.svg'})
     <section class="main">
         <div class="main__title">Page not found</div>
         <div class="main__subtitle">Something went wrong. Page not found</div>
@@ -25,6 +27,8 @@
     <footer class="footer">
         @@include('html/license.html', {src: 'icons/theFirsttheLast.svg'})
     </footer>
+    <script src="js/script.header.js"></script>
+    <script src="js/script.pop-up.js"></script>
 </body>
 
 </html>

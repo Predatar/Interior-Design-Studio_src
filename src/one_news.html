@@ -9,11 +9,15 @@
     @@include('html/head.html', {})
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.one_page.min.css">
+    <link rel="stylesheet" href="css/style.pop_up.min.css">
+    <link rel="stylesheet" href="css/style.sidemenu.min.css">
 </head>
 
 <body>
-    <section class="heading">
-        @@include('html/header.html', {theme: 'header__dark', src: 'icons/Logo-dark.svg'})
+    @@include('html/popUp.html', {})
+    @@include('html/sidemenu.html', {})
+    @@include('html/header.html', {theme: 'header__dark', src: 'icons/Logo-dark.svg'})
+    <section class="heading">    
         <div class="heading__wrapper">
             <div class="heading__caption">
                 <div class="heading__title">
@@ -184,6 +188,8 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.one_news.js"></script>
+    <script src="js/script.header.js"></script>
+    <script src="js/script.pop-up.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,7 @@
 .main {
-    padding: 0 63px 48px;
+    padding: 273px 63px 48px;
     background: url('@img/main/slides/slide1.png') center center/cover no-repeat;
     &__text {
-        margin-top: 183px;
         margin-left: 201px;
         width: 647px;
     }
@@ -160,16 +159,10 @@
     }
 }
 
-@media (max-width: 1248px) {
-    .main {
-        &__text {
-            margin-left: 144px;
-        }
-    }
-}
 
 @media (max-width: 1024px) {
     .main {
+        padding-top: 283px;
         &__text {
             margin-left: 105px;
             width: 440px;
@@ -189,9 +182,8 @@
 
 @media (max-width: 768px) {
     .main {
-        padding: 0 48px 48px;
+        padding: 383px 48px 48px;
         &__text {
-            margin-top: 287px;
             margin-left: 124px;
             width: 271px;
         }
@@ -234,9 +226,8 @@
 
 @media (max-width: 625px) {
     .main {
-        padding: 0 24px 48px;
+        padding: 216px 24px 48px;
         &__text {
-            margin-top: 157px;
             margin-left: 50px;
             width: 271px;
         }
@@ -271,9 +262,7 @@
 
 @media (max-width: 425px) {
     .main {
-        padding: 0 24px 48px;
         &__text {
-            margin-top: 157px;
             margin-left: 0;
             width: 271px;
         }

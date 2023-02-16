@@ -9,11 +9,16 @@
     @@include('html/head.html', {})
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.about_us.min.css">
+    <link rel="stylesheet" href="css/style.pop_up.min.css">
+    <link rel="stylesheet" href="css/style.sidemenu.min.css">
 </head>
 
 <body>
+    @@include('html/popUp.html', {})
+    @@include('html/sidemenu.html', {})
+    @@include('html/header.html', {theme: 'header__dark', src: 'icons/Logo-dark.svg'})
     <section class="heading">
-        @@include('html/header.html', {theme: 'header__dark', src: 'icons/Logo-dark.svg'})
+        
         <div class="heading__wrapper">
             <div class="heading__caption">
                 <div class="heading__title">Company Philosophy </div>
@@ -163,7 +168,8 @@
             </div>
             <div class="footer__subwrapper">
                 <div class="footer__subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae
+                    posuere. Ut at luctus ligula. Nunc ante felis, aliquam.
                 </div>
                 <div class="footer__info">
                     <div class="footer__email">
@@ -182,6 +188,8 @@
     <!-- * JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.about_us.js"></script>
+    <script src="js/script.header.js"></script>
+    <script src="js/script.pop-up.js"></script>
 </body>
 
 </html>

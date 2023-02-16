@@ -1,8 +1,8 @@
 .heading {
-    padding: 0 63px;
+    padding: 208px 63px 0;
 
     &__wrapper {
-        margin: 112px 135px 124px;
+        margin: 0 135px 124px;
     }
 
     &__caption {
@@ -66,10 +66,10 @@
 
 @media (max-width: 1248px) {
     .heading {
-        padding: 0 54px;
+        padding: 162px 54px 0;
 
         &__wrapper {
-            margin: 66px 0 104px 105px;
+            margin-left: 105px;
         }
 
         &__caption {
@@ -96,10 +96,10 @@
 }
 @media (max-width: 768px) {
     .heading {
-        padding: 0 48px;
+        padding: 138px 48px 0;
 
         &__wrapper {
-            margin: 45px 0 96px 76px;
+            margin-left: 76px;
         }
 
         &__caption {
@@ -120,7 +120,7 @@
 }
 @media (max-width: 695px) {
     .heading {
-        padding: 0 24px;
+        padding: 116px 48px 0;
 
         &__wrapper {
             margin: 62px 0;
@@ -143,5 +143,10 @@
 
         &__select-item {
         }
+    }
+}
+@media (max-width: 624px) {
+    .heading {
+        padding: 58px 24px 0;
     }
 }

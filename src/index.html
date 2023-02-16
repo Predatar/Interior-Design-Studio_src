@@ -15,8 +15,9 @@
 <body>
     @@include('html/popUp.html', {})
     @@include('html/sidemenu.html', {})
+    @@include('html/header.html', {src: '@icons/Logo.svg'})
     <section class="main">
-        @@include('html/header.html', {src: '@icons/Logo.svg'})
+        
         <div class="main__text">
             <div class="main__title">Thoughtful
                 making of space</div>
@@ -227,8 +228,10 @@
         <button class="footer__btn" id="makeRequest">Make request</button>
         @@include('html/license.html', {src: '@icons/theFirsttheLast.svg'})
     </footer>
-    <script src="js/script.index.js"></script>
     <script src="js/script.header.js"></script>
+    <script src="js/script.pop-up.js"></script>
+    <script src="js/script.index.js"></script>
+
 </body>
 
 </html>

@@ -1,10 +1,10 @@
 .heading {
-    padding: 0 63px;
+    padding: 208px 63px 0;
     display: flex;
     flex-direction: column;
 
     &__wrapper {
-        padding: 112px 143px 0;
+        padding: 0 143px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -56,7 +56,7 @@
 }
 @media (max-width: 1200px) {
     .heading {
-        padding: 0 56px;
+        padding: 162px 56px 0;
 
         &__wrapper {
             padding: 66px 0 0 105px;
@@ -76,7 +76,7 @@
 }
 @media (max-width: 768px) {
     .heading {
-        padding: 0 48px;
+        padding: 138px 48px 0;
 
         &__wrapper {
             padding: 42px 0 0 76px;
@@ -96,7 +96,7 @@
 }
 @media (max-width: 624px) {
     .heading {
-        padding: 0 24px;
+        padding: 116px 24px 0;
 
         &__wrapper {
             padding: 58px 0 0 0;

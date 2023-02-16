@@ -1,11 +1,13 @@
 .header {
+    padding: 0 63px;
     width: 100%;
     height: 96px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: absolute;
     z-index: 50;
+    transition: all .1s;
 
     &__wrapper {
         width: 540px;
@@ -218,8 +220,16 @@
     }
 }
 
+.header__fixed {
+    background: #fff;
+    top: 0 !important;
+    position: fixed !important;
+}
+
+
 @media (max-width: 1024px) {
     .header {
+        padding: 0 54px;
         &__wrapper {
             width: auto;
             justify-content: flex-start;
@@ -246,6 +256,7 @@
 }
 @media (max-width: 768px) {
     .header {
+        padding: 0 48px;
         &__wrapper {
             width: 237px;
             justify-content: flex-start;
@@ -269,6 +280,7 @@
 }
 @media (max-width: 624px) {
     .header {
+        padding: 0 24px;
         height: 58px;
         &__wrapper {
             width: auto;
