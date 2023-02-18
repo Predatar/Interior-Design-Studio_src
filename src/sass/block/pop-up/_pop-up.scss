@@ -44,11 +44,10 @@
     .pop-up {
         width: 558px;
         height: 1000px;
-        /*         margin-top: 200px; */
     }
     .backdoor {
-        /*         overflow-y: scroll;
-        padding: 50px 0; */
+        overflow-y: scroll;
+        align-items: start;
         &__btn {
         }
     }
@@ -56,10 +55,8 @@
 @media (max-width: 675px) {
     .pop-up {
         background: none;
-        margin-top: 50%;
     }
     .backdoor {
-        overflow-y: scroll;
         &__btn {
             top: 24px;
             bottom: 24px;
@@ -69,10 +66,9 @@
 @media (max-width: 624px) {
     .pop-up {
         background: none;
-        margin-top: 65%;
+        margin-top: 50px;
     }
     .backdoor {
-        overflow-y: scroll;
         &__btn {
             top: 24px;
             bottom: 24px;
@@ -82,10 +78,8 @@
 @media (max-width: 525px) {
     .pop-up {
         background: none;
-        margin-top: 75%;
     }
     .backdoor {
-        overflow-y: scroll;
         &__btn {
             top: 24px;
             bottom: 24px;
@@ -95,10 +89,8 @@
 @media (max-width: 425px) {
     .pop-up {
         background: none;
-        margin-top: 70%;
     }
     .backdoor {
-        overflow-y: scroll;
         &__btn {
             top: 24px;
             bottom: 24px;
@@ -108,10 +100,8 @@
 @media (max-width: 375px) {
     .pop-up {
         background: none;
-        margin-top: 100%;
     }
     .backdoor {
-        overflow-y: scroll;
         &__btn {
             top: 24px;
             bottom: 24px;
