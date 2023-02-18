@@ -1,5 +1,4 @@
 window.addEventListener('DOMContentLoaded', () => {
-    // * Main page, main section
 
     const mainSelectSpan = document.querySelector('.main__select span');
     const mainOptionItem = document.querySelectorAll('.main__option-item');

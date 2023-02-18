@@ -1,3 +1,21 @@
+function showPopup() {
+    backdoor.classList.remove('hide');
+    document.body.classList.add('overflow');
+}
+
+function hidePopup() {
+    backdoor.classList.add('hide');
+    document.body.classList.remove('overflow');
+}
+
+function exitPopup() {
+    if (sidemenu.classList.contains('show')) {
+        hidePopup();
+    } else {
+        hidePopup();
+    }
+}
+
 window.addEventListener('DOMContentLoaded', () => {
     const popUpBtn = document.querySelectorAll('#makeRequest');
     const exit = document.querySelector('.backdoor__btn');
@@ -5,17 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const sidemenu = document.querySelector('.sidemenu');
 
     popUpBtn.forEach(elem => {
-        elem.addEventListener('click', () => {
-            backdoor.classList.remove('hide');
-            document.body.classList.add('overflow');
-        });
+        elem.addEventListener('click', showPopup);
     });
-    exit.addEventListener('click', () => {
-        if (sidemenu.classList.contains('show')) {
-            backdoor.classList.add('hide');
-        } else {
-            backdoor.classList.add('hide');
-            document.body.classList.remove('overflow');
-        }
-    });
+    exit.addEventListener('click', exitPopup);
 });
