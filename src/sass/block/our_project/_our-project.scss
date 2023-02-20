@@ -1,5 +1,4 @@
 .our-project {
-
     .trail {
         margin: 111px auto 144px;
     }
@@ -154,12 +153,12 @@
     .our-project {
         &__anchor {
             display: block;
+            bottom: 480px;
         }
     }
 }
 @media (max-width: 944px) {
     .our-project {
-
         &__projects {
             &-about {
                 display: none;
@@ -187,7 +186,6 @@
 
         &__anchor {
             left: 48px;
-
         }
     }
 }
@@ -195,12 +193,12 @@
     .our-project {
         &__anchor {
             left: 15px;
+            bottom: 465px;
         }
     }
 }
 @media (max-width: 695px) {
     .our-project {
-
         &__projects {
             &-about {
                 display: none;
@@ -238,7 +236,6 @@
 
 @media (max-width: 525px) {
     .our-project {
-
         &__projects {
             &-about {
                 display: none;
