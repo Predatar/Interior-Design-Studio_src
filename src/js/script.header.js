@@ -40,7 +40,6 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', () => {
-        console.log('scroll');
         if (scrollPosition() > lastScroll && !containHide()) {
             header.classList.add('header__hide');
         } else if (scrollPosition() < lastScroll && containHide()) {
@@ -53,7 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         if (scrollPosition() < 50) {
-            if (!header.classList.contains('header__dark')) {
+            if (!isDarkTheme) {
                 header.classList.remove('header__dark');
                 headerLogo.src = header.classList.contains('header__dark')
                     ? 'icons/Logo-dark.svg'
