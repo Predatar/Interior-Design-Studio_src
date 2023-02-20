@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
         document.body.classList.toggle('overflow');
         headerBurger.classList.toggle('header__action-burger__active');
 
-        if (isDarkTheme) {
+        if (isDarkTheme && !header.classList.contains('header__show')) {
             header.classList.toggle('header__dark');
             headerLogo.src = header.classList.contains('header__dark')
                 ? 'icons/Logo-dark.svg'

@@ -2,9 +2,12 @@
 
 .sidemenu {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     padding: 212px 422px 40px 56px;
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
     left: -150%;
     transition: all 0.5s;
@@ -54,7 +57,7 @@
     }
 
     &__footer {
-        margin-top: 170px;
+        /* margin-top: 170px; */
         width: 546px;
         display: flex;
         justify-content: space-between;
@@ -253,7 +256,7 @@
         &__footer {
             width: 100%;
             align-items: center;
-            margin-top: 105px;
+            /* margin-top: 105px; */
         }
 
         &__social-list {

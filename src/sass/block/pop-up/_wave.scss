@@ -3,13 +3,16 @@
 }
 
 .wave-group .input {
-    font-size: 11px;
     padding: 10px 10px 10px 5px;
     display: block;
     width: 312px;
     border: none;
     border-bottom: 1px solid rgba(214, 214, 214, 0.3);
     background: transparent;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
     &__wider {
         width: 660px;
     }
@@ -21,7 +24,7 @@
 
 .wave-group .label {
     color: $fourth_text_color;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 11px;
     line-height: 13px;
     letter-spacing: 0.06em;
