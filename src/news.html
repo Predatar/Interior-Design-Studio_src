@@ -20,16 +20,30 @@
         <div class="heading__wrapper">
             <div class="heading__title">Our latest news</div>
             <div class="heading__select">
-                <div class="heading__select-item">All</div>
-                <div class="heading__select-item">Blog</div>
-                <div class="heading__select-item">News</div>
-                <div class="heading__select-item">Advice from the designer</div>
+                <div class="heading__select-item" data-filter="*">All</div>
+                <div class="heading__select-item" data-filter="Blog">Blog</div>
+                <div class="heading__select-item" data-filter="News">News</div>
+                <div class="heading__select-item" data-filter="Advice">Advice from the designer</div>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown__select">
+                    <span>All</span>
+                    <div class="dropdown__img">
+                        <img src="@icons/arrow-down.svg" alt="arrow-down">
+                    </div>
+                </div>
+                <div class="dropdown__wrapper">
+                    <div data-filter="*" class="dropdown__item">All</div>
+                    <div data-filter="Blog" class="dropdown__item">Blog</div>
+                    <div data-filter="News" class="dropdown__item">News</div>
+                    <div data-filter="Advice" class="dropdown__item">Advice from the designer</div>
+                </div>
             </div>
         </div>
     </section>
     <section class="news">
         <div class="news__wrapper">
-            <div class="news__item">
+            <div class="new-item news__item" data-filter="Blog">
                 <div class="news__info">
                     <div class="news__info-title">5 smart tips for productive collaboration with the designer</div>
                     <div class="news__info-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel
@@ -41,15 +55,15 @@
                     <img src="@img/news/news1.png" alt="interior">
                 </div>
             </div>
-            <div class="news__item news__item__slim">
+            <div class="new-item news__item news__item__slim" data-filter="News">
                 <div class="news__img"><img src="@img/news/news2.png" alt="interior"></div>
                 <div class="news__item-title">Non-standard plinth options</div>
             </div>
-            <div class="news__item news__item__slim">
+            <div class="new-item news__item news__item__slim" data-filter="News">
                 <div class="news__img"><img src="@img/news/news3.png" alt="interior"></div>
                 <div class="news__item-title">Interior design, LCD Rybalsky</div>
             </div>
-            <div class="news__item">
+            <div class="new-item news__item" data-filter="Advice">
                 <div class="news__img news__img__slim">
                     <img src="@img/news/news4.png" alt="interior">
                 </div>
@@ -78,7 +92,8 @@
         <div class="footer__wrapper">
             <div class="footer__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
             <div class="footer__group">
-                <div class="footer__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam.</div>
+                <div class="footer__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                    ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam.</div>
                 <form action="" class="footer__form">
                     <input type="email" name="email" id="email" class="footer__input" placeholder="Email">
                     <button class="footer__btn">
@@ -91,6 +106,8 @@
     </footer>
     <script src="js/script.header.js"></script>
     <script src="js/script.pop-up.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/script.news.js"></script>
 </body>
 
 </html>

@@ -1,19 +1,16 @@
 .our-project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+    .trail {
+        margin: 111px auto 144px;
+    }
 
     &__projects {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
-        position: relative;
+        margin: 0 auto;
+        max-width: 1314px;
         &-item {
             position: relative;
+            margin-bottom: 8px;
             &__wider {
-                width: 1314px;
+                max-width: 1314px;
             }
             &:hover {
                 .our-project__projects-info {
@@ -117,7 +114,7 @@
     }
 }
 
-@media (max-width: 1330px) {
+@media (max-width: 1334px) {
     .our-project {
         &__projects {
             &-about {
@@ -156,12 +153,12 @@
     .our-project {
         &__anchor {
             display: block;
+            bottom: 480px;
         }
     }
 }
-@media (max-width: 914px) {
+@media (max-width: 944px) {
     .our-project {
-
         &__projects {
             &-about {
                 display: none;
@@ -189,7 +186,6 @@
 
         &__anchor {
             left: 48px;
-
         }
     }
 }
@@ -197,12 +193,12 @@
     .our-project {
         &__anchor {
             left: 15px;
+            bottom: 465px;
         }
     }
 }
 @media (max-width: 695px) {
     .our-project {
-
         &__projects {
             &-about {
                 display: none;
@@ -240,7 +236,6 @@
 
 @media (max-width: 525px) {
     .our-project {
-
         &__projects {
             &-about {
                 display: none;

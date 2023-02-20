@@ -4,18 +4,26 @@ window.addEventListener('DOMContentLoaded', () => {
     const backdoor = document.querySelector('.backdoor');
     const sidemenu = document.querySelector('.sidemenu');
 
-    popUpBtn.forEach(elem => {
-        elem.addEventListener('click', () => {
-            backdoor.classList.remove('hide');
-            document.body.classList.add('overflow');
-        });
-    });
-    exit.addEventListener('click', () => {
+    function showPopup() {
+        backdoor.classList.remove('hide');
+        document.body.classList.add('overflow');
+    }
+    
+    function hidePopup() {
+        backdoor.classList.add('hide');
+        document.body.classList.remove('overflow');
+    }
+    
+    function exitPopup() {
         if (sidemenu.classList.contains('show')) {
-            backdoor.classList.add('hide');
+            hidePopup();
         } else {
-            backdoor.classList.add('hide');
-            document.body.classList.remove('overflow');
+            hidePopup();
         }
+    }
+
+    popUpBtn.forEach(elem => {
+        elem.addEventListener('click', showPopup);
     });
+    exit.addEventListener('click', exitPopup);
 });
