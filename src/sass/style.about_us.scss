@@ -1,13 +1,8 @@
 @import 'base/variables';
 @import 'base/mixins';
 
-.header {
-    top: -96px;
-}
-@media (max-width: 624px) {
-    .header {
-        top: -58px;
-    }
+.heading {
+    top: 0;
 }
 
 @import 'block/header';

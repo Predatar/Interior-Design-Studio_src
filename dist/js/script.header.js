@@ -15,36 +15,53 @@ window.addEventListener('DOMContentLoaded', () => {
         document.body.classList.toggle('overflow');
         headerBurger.classList.toggle('header__action-burger__active');
 
-        if (!header.classList.contains('header__fixed')) {
-            if (isDarkTheme) {
-                header.classList.toggle('header__dark');
-                headerLogo.src = header.classList.contains('header__dark')
-                    ? 'icons/Logo-dark.svg'
-                    : 'icons/Logo.svg';
-            } else {
-                return;
-            }
+        if (isDarkTheme) {
+            header.classList.toggle('header__dark');
+            headerLogo.src = header.classList.contains('header__dark')
+                ? 'icons/Logo-dark.svg'
+                : 'icons/Logo.svg';
+        } else {
+            return;
         }
     };
 
     hamburger.addEventListener('click', toggleMenu);
     headerBurger.addEventListener('click', toggleMenu);
 
+    // * ---------------------------------------
+
+    let lastScroll = 0;
+    const scrollPosition = () => {
+        return window.pageYOffset || document.documentElement.scrollTop;
+    };
+
+    const containHide = () => {
+        return header.classList.contains('header__hide');
+    };
+
     window.addEventListener('scroll', () => {
-        const shouldAddClass = window.scrollY >= 800;
-        if (shouldAddClass && !header.classList.contains('header__fixed')) {
-            header.classList.add('header__fixed');
-            if (!isDarkTheme) {
-                header.classList.add('header__dark');
-                headerLogo.src = 'icons/Logo-dark.svg';
-            }
-        } else if (!shouldAddClass && header.classList.contains('header__fixed')) {
-            header.classList.remove('header__fixed');
-            document.body.style = 'margin-top: 0';
-            if (!isDarkTheme) {
-                header.classList.remove('header__dark');
-                headerLogo.src = 'icons/Logo.svg';
-            }
+        console.log('scroll');
+        if (scrollPosition() > lastScroll && !containHide()) {
+            header.classList.add('header__hide');
+        } else if (scrollPosition() < lastScroll && containHide()) {
+            header.classList.remove('header__hide');
+            header.classList.add('header__dark');
+            headerLogo.src = header.classList.contains('header__dark')
+                ? 'icons/Logo-dark.svg'
+                : 'icons/Logo.svg';
+            header.classList.add('header__show');
         }
+
+        if (scrollPosition() < 50) {
+            if (!header.classList.contains('header__dark')) {
+                header.classList.remove('header__dark');
+                headerLogo.src = header.classList.contains('header__dark')
+                    ? 'icons/Logo-dark.svg'
+                    : 'icons/Logo.svg';
+            }
+            header.classList.remove('header__show');
+        }
+
+        lastScroll = scrollPosition();
     });
 });

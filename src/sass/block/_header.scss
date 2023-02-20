@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     z-index: 50;
     transition: all .1s;
 
@@ -174,6 +174,14 @@
             }
         }
     }
+
+    &__hide {
+        transform: translateY(-96px);
+    }
+
+    &__show {
+        background: #fff;
+    }
 }
 
 .header__dark {
@@ -218,12 +226,6 @@
             color: $second_text_color;
         }
     }
-}
-
-.header__fixed {
-    background: #fff;
-    top: 0 !important;
-    position: fixed !important;
 }
 
 
