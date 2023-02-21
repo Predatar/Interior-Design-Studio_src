@@ -1,12 +1,8 @@
 @import 'base/variables';
 @import 'base/mixins';
 
-body {
-    position: relative;
-}
 
-
-
+@import 'block/preloader';
 @import 'block/header';
 @import 'block/main/_main';
 @import 'block/main/company-phil';
