@@ -57,7 +57,7 @@ gulp.task('html', function () {
         .pipe(fileinclude())
         .pipe(replace(/@img\//g, 'img/'))
         .pipe(replace(/@icons\//g, 'icons/'))
-        .pipe(replace(/@html\//g, '/'))
+        .pipe(replace(/@html\//g, ''))
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('dist/'))
         .pipe(browserSync.stream());
