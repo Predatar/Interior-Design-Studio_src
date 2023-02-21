@@ -7,7 +7,6 @@ let n = 0,
 
 document.addEventListener('DOMContentLoaded', () => {
     const mediaFiles = document.querySelectorAll('img');
-    console.log(mediaFiles);
     let i = 0;
         
 
@@ -22,13 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (i == mediaFiles.length) {
                 isLoad = true;
                 isLoaded();
-                console.log('media')
             }
         });
     });
 
     window.onload = () => {
-        console.log('window')
         isLoad ? null : isLoaded();
     };
 });
