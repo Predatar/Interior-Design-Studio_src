@@ -1,18 +1,11 @@
 @import 'base/variables';
 @import 'base/mixins';
 
-.preloader {
-    top: -96px !important;
-}
+
 .header {
     top: 0;
 }
 
-@media (max-width: 624px) {
-    .preloader {
-        top: -58px !important;
-    }
-}
 
 @import 'block/preloader';
 @import 'block/header';
