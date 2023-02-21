@@ -11,7 +11,7 @@
         font-size: 36px;
         line-height: 51px;
         color: $main_text_color;
-        z-index: 2;
+        z-index: 0;
     }
 
     &__group {
@@ -26,45 +26,59 @@
 
     &__group-item {
         position: absolute;
+        transition: all .2s ease;
+        &:nth-child(1) {
+            transform: rotate(-6deg);
+        }
         &:nth-child(2) {
             left: 66px;
             bottom: 20px;
+             transform: rotate(-1deg);
         }
         &:nth-child(3) {
             left: 106px;
-            bottom: 24px;
+            bottom: 25px;
+             transform: rotate(-6deg);
         }
         &:nth-child(4) {
             left: 171px;
             bottom: 53px;
+             transform: rotate(-2deg);
         }
         &:nth-child(5) {
             left: 217px;
             bottom: 70px;
+             transform: rotate(-11deg);
         }
         &:nth-child(6) {
             right: 236px;
             top: 84px;
+             transform: rotate(-6deg);
         }
         &:nth-child(7) {
             right: 196px;
             top: 83px;
+             transform: rotate(-1deg);
         }
         &:nth-child(8) {
             right: 131px;
             top: 60px;
+             transform: rotate(-6deg);
         }
         &:nth-child(9) {
             right: 84px;
             top: 45px;
+             transform: rotate(-2deg);
         }
         &:nth-child(10) {
             right: 0;
             top: 0;
+             transform: rotate(-11deg);
         }
 
         &__active {
-            z-index: 10;
+            z-index: 120;
+            transform: rotate(0deg) scale(1.2) !important;
         }
     }
 

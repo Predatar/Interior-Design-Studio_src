@@ -8,11 +8,10 @@
     <title>Contacts</title>
     @@include('html/head.html', {})
     <link rel="stylesheet" href="css/style.contacts.min.css">
-    <link rel="stylesheet" href="css/style.pop_up.min.css">
-    <link rel="stylesheet" href="css/style.sidemenu.min.css">
 </head>
 
 <body>
+    @@include('html/preloader.html', {})
     @@include('html/popUp.html', {})
     @@include('html/sidemenu.html', {})
     @@include('html/header.html', {theme: '', src: 'icons/Logo.svg'})
@@ -63,6 +62,7 @@
     <footer class="footer">
         @@include('html/license.html', {src: '@icons/theFirsttheLast.svg'})
     </footer>
+    <script src="js/script.preloader.js"></script>
     <script src="js/script.header.js"></script>
     <script src="js/script.pop-up.js"></script>
 </body>

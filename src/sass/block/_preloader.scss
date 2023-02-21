@@ -1,0 +1,44 @@
+.preloader {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: all .7s ease-out;
+    &__container {
+        width: 137px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.26em;
+        color: $main_text_color;
+        transition: all .5s;
+        &__active {
+            text-align: center;
+        }
+    }
+
+    &__load {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.26em;
+        color: $main_text_color;
+    }
+
+    &__hide {
+        opacity: 0;
+        z-index: -10;
+        visibility: hidden;
+    }
+}

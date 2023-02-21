@@ -9,11 +9,10 @@
     @@include('html/head.html', {})
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.main.min.css">
-    <link rel="stylesheet" href="css/style.pop_up.min.css">
-    <link rel="stylesheet" href="css/style.sidemenu.min.css">
 </head>
 
-<body>
+<body class="overflow">
+    @@include('html/preloader.html', {})
     @@include('html/popUp.html', {})
     @@include('html/sidemenu.html', {})
     @@include('html/header.html', {src: '@icons/Logo.svg'})
@@ -260,9 +259,11 @@
         <button class="footer__btn" id="makeRequest">Make request</button>
         @@include('html/license.html', {src: '@icons/theFirsttheLast.svg'})
     </footer>
+    <script src="js/script.preloader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.header.js"></script>
     <script src="js/script.pop-up.js"></script>
+    <script src="js/script.trail.js"></script>
     <script src="js/script.index.js"></script>
 
 </body>
