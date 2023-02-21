@@ -3,6 +3,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const exit = document.querySelector('.backdoor__btn');
     const backdoor = document.querySelector('.backdoor');
     const sidemenu = document.querySelector('.sidemenu');
+    const popup = document.querySelector('.pop-up');
+    const modal = document.querySelector('.modal__wrapper');
+    const modalBtn = document.querySelector('.modal__btn');
+    let timerID;
 
     function showPopup() {
         backdoor.classList.remove('hide');
@@ -16,24 +20,34 @@ window.addEventListener('DOMContentLoaded', () => {
     function exitPopup() {
         if (sidemenu.classList.contains('show')) {
             hidePopup();
-            form.reset();
-            warning.forEach(elem => {
-                elem.innerHTML = '';
-            });
         } else {
             hidePopup();
             document.body.classList.remove('overflow');
-            form.reset();
-            warning.forEach(elem => {
-                elem.innerHTML = '';
-            });
         }
+        backdoor.classList.remove('backdoor__centered');
+        popup.classList.remove('pop-up__hide');
+        modal.classList.remove('modal__wrapper__active');
+        form.reset();
+        warning.forEach(elem => {
+            elem.innerHTML = '';
+        });
     }
 
     popUpBtn.forEach(elem => {
         elem.addEventListener('click', showPopup);
     });
     exit.addEventListener('click', exitPopup);
+
+    modalBtn.addEventListener('click', () => {
+        clearTimeout(timerID);
+        form.reset();
+        warning.forEach(elem => {
+            elem.innerHTML = '';
+        });
+        backdoor.classList.remove('backdoor__centered');
+        popup.classList.remove('pop-up__hide');
+        modal.classList.remove('modal__wrapper__active');
+    });
 
     // * Validation ------------------------------------
 
@@ -46,12 +60,13 @@ window.addEventListener('DOMContentLoaded', () => {
     const type = document.querySelector('#type');
     const comment = document.querySelector('#comment');
     const radioSet = document.querySelector('.form__container2-fieldset');
+    const radioSet2 = document.querySelectorAll('.form__container3-fieldset');
+    const file = document.querySelector('#file');
     const warning = document.querySelectorAll('.warning');
     const personInfo = {};
-    let isClick = false;
 
     name.addEventListener('input', e => {
-        if (e.target.value.match(/[a-zA-Z]+/)) {
+        if (e.target.value.match(/^[a-zA-Z ]+$/)) {
             personInfo.name = e.target.value;
             warning[0].style.color = 'green';
             warning[0].innerHTML = 'Correctly';
@@ -61,7 +76,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
     lastName.addEventListener('input', e => {
-        if (e.target.value.match(/[a-zA-Z]+/)) {
+        if (e.target.value.match(/^[a-zA-Z ]+$/)) {
             personInfo.lastName = e.target.value;
             warning[1].style.color = 'green';
             warning[1].innerHTML = 'Correctly';
@@ -110,17 +125,37 @@ window.addEventListener('DOMContentLoaded', () => {
             warning[5].innerHTML = 'Correctly';
         }
     });
-    comment.addEventListener('change', e => {
+    comment.addEventListener('input', e => {
         personInfo.comment = e.target.value;
     });
     radioSet.addEventListener('click', e => {
         personInfo.area = e.target.value;
-        isClick = true;
+    });
+    radioSet2.forEach(elem => {
+        elem.addEventListener('click', e => {
+            personInfo.area = e.target.value;
+        });
+    });
+    file.addEventListener('change', () => {
+        if (file.files[0].size < 10485760) {
+            warning[6].style.color = 'green';
+            warning[6].innerHTML = 'Correctly';
+            personInfo.file = file.files;
+        } else {
+            warning[6].style.color = 'red';
+            warning[6].innerHTML = 'The downloaded file exceeds 10 MB';
+        }
+        personInfo.file = file.files;
     });
 
     form.addEventListener('submit', e => {
         e.preventDefault();
-        isClick ? null : personInfo.area = document.querySelector('[checked="checked"]').value;
         console.log(personInfo);
+        setTimeout(() => {
+            backdoor.classList.add('backdoor__centered');
+            popup.classList.add('pop-up__hide');
+            modal.classList.add('modal__wrapper__active');
+        }, 500);
+        timerID = setTimeout(exitPopup, 5000);
     });
 });

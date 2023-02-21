@@ -6,7 +6,7 @@
                 <div class="form__title2">Make Request</div>
                 <div class="form__container1-wrapper">
                     <div class="wave-group">
-                        <input required="" type="text" class="input" name="name" id="name">
+                        <input required="" type="text" class="input" name="name" id="name" pattern="^[a-zA-Z ]+$">
                         <span class="bar"></span>
                         <label class="label">
                             <span class="label-char" style="--index: 0">N</span>
@@ -17,7 +17,7 @@
                         <div class="warning"></div>
                     </div>
                     <div class="wave-group">
-                        <input required="" type="text" class="input" name="last_name" id="last_name">
+                        <input required="" type="text" class="input" name="last_name" id="last_name" pattern="^[a-zA-Z ]+$">
                         <span class="bar"></span>
                         <label class="label">
                             <span class="label-char" style="--index: 0">L</span>
@@ -33,7 +33,7 @@
                         <div class="warning"></div>
                     </div>
                     <div class="wave-group">
-                        <input required="" type="tel" class="input" name="phone" id="phone">
+                        <input required="" type="tel" class="input" name="phone" id="phone" pattern="^[0-9\-\+]{9,15}$">
                         <span class="bar"></span>
                         <label class="label">
                             <span class="label-char" style="--index: 0">P</span>
@@ -106,7 +106,7 @@
                     <fieldset class="form__container2-fieldset">
                         <input type="radio" value="to 50" name="area" id="area">
                         <!-- * ---------------- -->
-                        <input type="radio" value="50-150" name="area" id="area" checked>
+                        <input type="radio" value="50-150" name="area" id="area" required>
                         <!-- * ---------------- -->
                         <input type="radio" value="150-250" name="area" id="area">
                         <!-- * ---------------- -->
@@ -120,13 +120,12 @@
                         <!-- * ---------------- -->
                         <input type="radio" value="1000+" name="area" id="area">
                         <div class="form__divider"></div>
-                        <div class="warning"></div>
                     </fieldset>
                     <div class="form__container3-wrapper">
                         <fieldset class="form__container3-fieldset">
                             <input type="radio" value="to 50" name="area" id="area">
                             <!-- * ---------------- -->
-                            <input type="radio" value="50-150" name="area" id="area">
+                            <input type="radio" value="50-150" name="area" id="area" required>
                             <!-- * ---------------- -->
                             <input type="radio" value="150-250" name="area" id="area">
                             <!-- * ---------------- -->
@@ -145,12 +144,13 @@
                         </fieldset>
                     </div>
                     <div class="form__input-file">
-                        <input type="file" name="file" id="file">
+                        <input type="file" name="file" id="file" accept="image/*">
                         <label for="file"></label>
                         <div class="file-info">
                             <div class="file-info__title">Attach your file</div>
                             <div class="file-info__subtitle">File size not more than 10 MB</div>
                         </div>
+                        <div class="warning"></div>
                     </div>
                     <button class="form__btn">Send Request</button>
                 </div>
@@ -163,6 +163,11 @@
                 </div>
             </div>
         </form>
+    </div>
+    <div class="modal__wrapper">
+        <div class="modal__title">Thank you for your message!</div>
+        <div class="modal__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</div>
+        <button class="modal__btn">Send again</button>
     </div>
     <div class="backdoor__btn">
         <img src="@icons/exit.svg" alt="exit">
