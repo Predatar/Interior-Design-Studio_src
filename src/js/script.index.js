@@ -1,5 +1,4 @@
 window.addEventListener('DOMContentLoaded', () => {
-
     const mainSelectSpan = document.querySelector('.main__select span');
     const mainOptionItem = document.querySelectorAll('.main__option-item');
 
@@ -13,4 +12,18 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    const swiper = new Swiper('.swiper', {
+        grabCursor: true,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.slider-button-next',
+            prevEl: '.slider-button-prev'
+        },
+        scrollbar: {
+            el: '.slider-scrollbar'
+        },
+        autoplay: {
+            delay: 5000
+        }
+    });
 });

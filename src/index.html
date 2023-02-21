@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interior Design Studio</title>
     @@include('html/head.html', {})
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.main.min.css">
     <link rel="stylesheet" href="css/style.pop_up.min.css">
     <link rel="stylesheet" href="css/style.sidemenu.min.css">
@@ -17,7 +18,21 @@
     @@include('html/sidemenu.html', {})
     @@include('html/header.html', {src: '@icons/Logo.svg'})
     <section class="main">
-        
+        <div class="slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="@img/main/slides/slide1.png" alt="slide">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="@img/main/slides/slide3.png" alt="slide">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="@img/main/slides/slide2.png" alt="slide">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="main__text">
             <div class="main__title">Thoughtful
                 making of space</div>
@@ -25,6 +40,17 @@
                 <a href="@html/page404.html" class="main__link">
                     Discover more
                 </a>
+                <div class="slider__navigation">
+                    <div class="slider-button-prev">
+                        <img src="@icons/main/arrow-prev.svg" alt="arrow-prew">
+                    </div>
+                    <div class="slider__number">01</div>
+                    <div class="slider-scrollbar"></div>
+                    <div class="slider__number">03</div>
+                    <div class="slider-button-next">
+                        <img src="@icons/main/arrow-next.svg" alt="arrow-next">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="main__info">
@@ -61,6 +87,12 @@
                     <a href="mailto:info@gmail.com">
                         E: info@gmail.com
                     </a>
+                </div>
+            </div>
+            <div class="main__reversed">
+                <div class="main__reversed-title">Next Project</div>
+                <div class="main__reversed-subtitle">
+                    Perfect proportions
                 </div>
             </div>
         </div>
@@ -228,6 +260,7 @@
         <button class="footer__btn" id="makeRequest">Make request</button>
         @@include('html/license.html', {src: '@icons/theFirsttheLast.svg'})
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.header.js"></script>
     <script src="js/script.pop-up.js"></script>
     <script src="js/script.index.js"></script>
