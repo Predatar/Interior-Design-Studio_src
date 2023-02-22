@@ -15,9 +15,11 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     filterBtn.addEventListener('click', e => {
-        const filter = e.target.dataset.filter;
-        if (filter) {
-            arrangeProjects(`[data-filter="${filter}"]`);
+        if (!e.target.classList.contains('heading__select')) {
+            const filter = e.target.dataset.filter;
+            if (filter) {
+                arrangeProjects(`[data-filter="${filter}"]`);
+            }
         }
     });
 
@@ -34,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
         dropDownMenuSelect.innerHTML = filter;
         dropDownItems.forEach(elem => {
             elem.classList.remove('dropdown__item__active');
-        })
+        });
         e.target.classList.add('dropdown__item__active');
         if (filter) {
             arrangeProjects(`[data-filter="${filter}"]`);

@@ -16,8 +16,10 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     filterBtn.addEventListener('click', ({ target }) => {
-        const filter = target.dataset.filter;
-        arrangeProjects(filter === '*' ? '' : `[data-filter="${filter}"]`);
+        if (!target.classList.contains('heading__select')) {
+            const filter = target.dataset.filter;
+            arrangeProjects(filter === '*' ? '' : `[data-filter="${filter}"]`);
+        }
     });
 
     const dropDownMenu = document.querySelector('.dropdown__select');

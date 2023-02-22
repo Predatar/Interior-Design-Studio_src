@@ -7,28 +7,23 @@ let n = 0,
 
 document.addEventListener('DOMContentLoaded', () => {
     const mediaFiles = document.querySelectorAll('img');
-    console.log(mediaFiles);
     let i = 0;
         
 
     mediaFiles.forEach(elem => {
         elem.addEventListener('load', () => {
             i++;
-            console.log(elem);
-            console.log(i);
 
             preloaderPercent.innerHTML = Math.round((i * 100) / mediaFiles.length);
 
             if (i == mediaFiles.length) {
                 isLoad = true;
                 isLoaded();
-                console.log('media')
             }
         });
     });
 
     window.onload = () => {
-        console.log('window')
         isLoad ? null : isLoaded();
     };
 });

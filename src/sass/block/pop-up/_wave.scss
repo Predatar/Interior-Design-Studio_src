@@ -47,6 +47,27 @@
     color: #5264ae;
 }
 
+.input__comment {
+    &:valid ~ label .label-char {
+        transform: none !important;
+        font-size: 11px !important;
+        color: $fourth_text_color !important;
+    }
+    &:focus ~ label .label-char {
+        transform: translateY(-20px) !important;
+        font-size: 13px !important;
+        color: #5264ae !important;
+    }
+}
+
+.input__invalid {
+    &:invalid ~ .label .label-char {
+        transform: translateY(-20px);
+        font-size: 13px;
+        color: #ae5252 !important;
+    }
+}
+
 .wave-group .bar {
     position: relative;
     display: block;
