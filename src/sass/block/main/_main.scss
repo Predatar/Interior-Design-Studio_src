@@ -231,8 +231,14 @@
         width: 186px;
         height: 2px;
         background: rgba(255, 255, 255, 0.32);
-        .swiper-scrollbar-drag {
+        position: relative;
+        &-drag {
+            position: absolute;
+            top: 0;
+            left: 0;
             background: #ffffff;
+            height: 100%;
+            transition: all 1s;
         }
     }
 }

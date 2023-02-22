@@ -52,8 +52,16 @@
     &-scrollbar {
         width: 227px;
         height: 2px;
-        background: #828282;
-        opacity: 0.32;
+        background: rgba(255, 255, 255, 0.32);
+        position: relative;
+        &-drag {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0, 0.5);
+            height: 100%;
+            transition: all 1s;
+        }
     }
 }
 

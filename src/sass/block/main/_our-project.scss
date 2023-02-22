@@ -65,6 +65,8 @@
         }
         &-item {
             position: relative;
+            filter: grayscale(50%);
+            transition: all .1s ease-in;
             &__wider {
                 width: 1314px;
             }
@@ -84,6 +86,7 @@
                 }
             }
             &:hover {
+                filter: grayscale(0);
                 .our-project__projects-info {
                     display: flex;
                 }
