@@ -9,16 +9,25 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     const filterBtn = document.querySelector('.heading__select');
+    const filterItems = document.querySelectorAll('.heading__select-item');
 
     function arrangeProjects(filter) {
         ourProjectGrid.arrange({ filter });
     }
 
+    filterItems[0].classList.add('heading__select-item__active');
+
     filterBtn.addEventListener('click', e => {
         if (!e.target.classList.contains('heading__select')) {
             const filter = e.target.dataset.filter;
+            filterItems.forEach(elem => {
+                elem.classList.contains('heading__select-item__active')
+                    ? elem.classList.remove('heading__select-item__active')
+                    : null;
+            });
+            e.target.classList.add('heading__select-item__active');
             if (filter) {
-                arrangeProjects(`[data-filter="${filter}"]`);
+                arrangeProjects(filter == 'House' ? '' : `[data-filter="${filter}"]`);
             }
         }
     });

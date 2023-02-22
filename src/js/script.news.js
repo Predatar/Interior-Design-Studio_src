@@ -10,13 +10,22 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     const filterBtn = document.querySelector('.heading__select');
+    const filterItems = document.querySelectorAll('.heading__select-item');
 
     function arrangeProjects(filter) {
         newsGrid.arrange({ filter });
     }
 
+    filterItems[0].classList.add('heading__select-item__active');
+
     filterBtn.addEventListener('click', ({ target }) => {
         if (!target.classList.contains('heading__select')) {
+            filterItems.forEach(elem => {
+                elem.classList.contains('heading__select-item__active')
+                    ? elem.classList.remove('heading__select-item__active')
+                    : null;
+            });
+            target.classList.add('heading__select-item__active');
             const filter = target.dataset.filter;
             arrangeProjects(filter === '*' ? '' : `[data-filter="${filter}"]`);
         }
