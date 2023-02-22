@@ -9,10 +9,13 @@
         &-item {
             position: relative;
             margin-bottom: 8px;
+            filter: grayscale(50%);
+            transition: all .1s ease-in;
             &__wider {
                 max-width: 1314px;
             }
             &:hover {
+                filter: grayscale(0);
                 .our-project__projects-info {
                     display: flex;
                 }
