@@ -63,4 +63,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
         lastScroll = scrollPosition();
     });
+
+    //  * -------------------
+
+    const headerLang = document.querySelector('.header__lang span');
+    const headerSecondLang = document.querySelector('.header__lang-option');
+
+    headerSecondLang.addEventListener('click', () => {
+        const stk = headerLang.innerHTML;
+        headerLang.innerHTML = headerSecondLang.innerHTML;
+        headerSecondLang.innerHTML = stk;
+    })
+    
 });

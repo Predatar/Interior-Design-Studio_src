@@ -1,11 +1,9 @@
 @import 'base/variables';
 @import 'base/mixins';
 
-
 .header {
     top: 0;
 }
-
 
 @import 'block/preloader';
 @import 'block/header';

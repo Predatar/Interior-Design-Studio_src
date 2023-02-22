@@ -31,6 +31,11 @@ window.addEventListener('DOMContentLoaded', () => {
         warning.forEach(elem => {
             elem.innerHTML = '';
         });
+        inputs.forEach(elem => {
+            elem.classList.contains('input__invalid')
+                ? elem.classList.remove('input__invalid')
+                : null;
+        });
     }
 
     popUpBtn.forEach(elem => {
@@ -43,6 +48,11 @@ window.addEventListener('DOMContentLoaded', () => {
         form.reset();
         warning.forEach(elem => {
             elem.innerHTML = '';
+        });
+        inputs.forEach(elem => {
+            elem.classList.contains('input__invalid')
+                ? elem.classList.remove('input__invalid')
+                : null;
         });
         backdoor.classList.remove('backdoor__centered');
         popup.classList.remove('pop-up__hide');
@@ -63,6 +73,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const radioSet2 = document.querySelectorAll('.form__container3-fieldset');
     const file = document.querySelector('#file');
     const warning = document.querySelectorAll('.warning');
+    const inputs = document.querySelectorAll('.input');
     const personInfo = {};
 
     name.addEventListener('input', e => {
@@ -71,6 +82,9 @@ window.addEventListener('DOMContentLoaded', () => {
             warning[0].style.color = 'green';
             warning[0].innerHTML = 'Correctly';
         } else {
+            e.target.value == ''
+                ? e.target.classList.remove('input__invalid')
+                : e.target.classList.add('input__invalid');
             warning[0].style.color = 'red';
             warning[0].innerHTML = 'Enter the name correctly';
         }
@@ -81,6 +95,9 @@ window.addEventListener('DOMContentLoaded', () => {
             warning[1].style.color = 'green';
             warning[1].innerHTML = 'Correctly';
         } else {
+            e.target.value == ''
+                ? e.target.classList.remove('input__invalid')
+                : e.target.classList.add('input__invalid');
             warning[1].style.color = 'red';
             warning[1].innerHTML = 'Enter the last name correctly';
         }
@@ -91,6 +108,9 @@ window.addEventListener('DOMContentLoaded', () => {
             warning[2].style.color = 'green';
             warning[2].innerHTML = 'Correctly';
         } else {
+            e.target.value == ''
+                ? e.target.classList.remove('input__invalid')
+                : e.target.classList.add('input__invalid');
             warning[2].style.color = 'red';
             warning[2].innerHTML = 'Enter the telephone number correctly';
         }
@@ -101,6 +121,9 @@ window.addEventListener('DOMContentLoaded', () => {
             warning[3].style.color = 'green';
             warning[3].innerHTML = 'Correctly';
         } else {
+            e.target.value == ''
+                ? e.target.classList.remove('input__invalid')
+                : e.target.classList.add('input__invalid');
             warning[3].style.color = 'red';
             warning[3].innerHTML = 'Enter the city correctly';
         }
@@ -111,6 +134,9 @@ window.addEventListener('DOMContentLoaded', () => {
             warning[4].style.color = 'green';
             warning[4].innerHTML = 'Correctly';
         } else {
+            e.target.value == ''
+                ? e.target.classList.remove('input__invalid')
+                : e.target.classList.add('input__invalid');
             warning[4].style.color = 'red';
             warning[4].innerHTML = 'Enter the email address correctly';
         }
@@ -126,7 +152,12 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
     comment.addEventListener('input', e => {
-        personInfo.comment = e.target.value;
+        if(e.target.value != '') {
+            e.target.classList.remove('input__comment')
+            personInfo.comment = e.target.value;
+        } else {
+            e.target.classList.add('input__comment');
+        }
     });
     radioSet.addEventListener('click', e => {
         personInfo.area = e.target.value;

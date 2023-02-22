@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     mediaFiles.forEach(elem => {
         elem.addEventListener('load', () => {
             i++;
-            console.log(elem);
-            console.log(i);
 
             preloaderPercent.innerHTML = Math.round((i * 100) / mediaFiles.length);
 
